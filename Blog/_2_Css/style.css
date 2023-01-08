@@ -2,3 +2,33 @@
 #paragraf_id{
   border:1px solid blue;
 }
+
+.paragraf_class2{
+    color:red;
+    color:#4510d8;
+    color:#563;
+    color:rgb(155,241,15);
+    color:rgba(16, 32, 177, 0.8);
+    color:rgba(255, 255, 255, .9);
+
+    background-color: black;
+
+    /* iç boşluk */
+    padding-top:12px;
+    padding-right:12px;
+    padding-bottom:12px;
+    padding-left:12px;
+    padding:12px;
+    padding:15px 20px;
+
+     /* dış boşluk */
+     margin-top:12px;
+     margin-right:12px;
+     margin-bottom:12px;
+     margin-left:12px;
+     margin:12px;
+     margin:15px 20px;
+
+     border:2px solid rgb(155,241,15);
+     box-shadow: .8px .5px 8px 1px rgba(0,0,0,.8);
+}
