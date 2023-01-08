@@ -112,3 +112,53 @@ img:hover{
 }
 
 /* list */
+ul{
+    margin-left:8%;
+    list-style-type: none;
+}
+
+ul li{
+  display: inline-block; 
+  border: 1px solid red; 
+  background-color: #4510d8;
+  color:white;
+  text-transform: uppercase;
+  padding:2% 3px 1.5% 4px;
+
+}
+
+/*li hover: ödev*/
+ul li:hover{
+
+}
+
+#div_id img{
+float: left;
+width: 50%;
+
+border-top-left-radius: 12%;
+border-bottom-right-radius: 12%;
+}
+#div_id p{
+    padding-left:10px;
+}
+
+.clear_fix::before{
+content: "";
+clear: both;
+display: block;
+}
+#my_special_table{
+    border: 1px solid green;
+    width: 100%;
+}
+
+#my_special_table thead tr th{
+    text-transform: uppercase;
+    background-color: aqua;
+    opacity: .5;
+}
+
+#my_special_table tbody tr td{
+    text-indent: 6px;
+}
