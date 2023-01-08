@@ -2,7 +2,6 @@
 <!-- Html5: case sensitive değildir. -->
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <title>Sayfa Adı</title>
     <!-- türkçe karakter sorunu olmasın diye  -->
@@ -11,6 +10,9 @@
 
     <!-- for Media Query , Responsive design  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font awesome: CDN-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 
 <body>
@@ -21,11 +23,11 @@
     <!-- Kendi ailenizden isimler kullanarak ilerliyelim. -->
 
     <!-- FORM -->
-    <form method="post">
+    <form method="post" id="form_register" name="form_register"  >
         <table>
             <tbody>
                 <tr>
-                    <td>Surname: </td>
+                    <td> <i class="fa-regular fa-user"></i> </td>
                     <td>
                         <input 
                         type="text" 
@@ -34,6 +36,37 @@
                         autofocus="true" required="true" />
                     </td>
                 </tr>
+                <tr>
+                    <td> <i class="fa-solid fa-envelope"></i> </td>
+                    <td>
+                        <input 
+                        type="email" 
+                        name="email" id="email" 
+                        placeholder="email giriniz" 
+                        required="true" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <i class="fa-solid fa-key"></i></td>
+                    <td>
+                        <input 
+                        type="password" 
+                        name="password" id="password" 
+                        placeholder="password giriniz" 
+                        required="true" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td>
+                        <button type="submit">Gönder</button>
+                    </td>
+                </tr>
+
+               
+
             </tbody>
         </table>
     </form>
