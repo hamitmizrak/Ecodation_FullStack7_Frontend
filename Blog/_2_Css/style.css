@@ -74,5 +74,13 @@
      letter-spacing: .1px;
      word-spacing: 1px;
      line-height: 8px;
-     
+
+     display: inline;
+     display: block;
+     display:none;
+     display: inline-block;
+
 }
+
+/* visibility ile display arasındaki fark  */
+/* span ile div arasındaki fark */
