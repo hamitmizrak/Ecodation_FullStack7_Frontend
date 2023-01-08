@@ -4,6 +4,7 @@
     margin: 0px;
     padding:0;
     box-sizing: border-box; 
+    transition: all .7s;
 }
 
 
@@ -79,8 +80,35 @@
      display: block;
      display:none;
      display: inline-block;
-
 }
 
 /* visibility ile display arasındaki fark  */
 /* span ile div arasındaki fark */
+
+a{
+    text-decoration: none;
+    border:1px solid #000fff;
+    margin:2%;
+    padding:2%;
+    background-color: black;
+    color:white;
+    
+}
+
+a:hover{
+    background-color: white;
+    color:black;
+    text-transform: capitalize;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+   
+}
+
+img:hover{
+    box-shadow: .8px .5px 8px 1px rgba(0,0,0,.8);
+}
+
+/* list */
