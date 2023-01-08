@@ -1,4 +1,13 @@
 /* external css */
+
+*{
+    margin: 0px;
+    padding:0;
+    box-sizing: border-box; 
+}
+
+
+
 #paragraf_id{
   border:1px solid blue;
 }
@@ -31,4 +40,39 @@
 
      border:2px solid rgb(155,241,15);
      box-shadow: .8px .5px 8px 1px rgba(0,0,0,.8);
+
+     cursor:pointer!important;
+     
+     width: 150px;
+     min-width: 150px;
+     max-width: 150px;
+
+     height: 100px;
+     min-height: 100px;
+     max-height: 100px;
+
+     font-size: 8px!important;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 200;
+
+     text-align: justify;
+     text-align: left;
+     text-align: right;
+     text-align: center;
+
+     text-decoration: line-through;
+     text-decoration: underline;
+     text-decoration: none;
+
+     text-transform: uppercase;
+     text-transform: lowercase;
+     text-transform: none;
+     text-transform: capitalize;
+
+     text-shadow: 0.2px .2px white;
+     
+     letter-spacing: .1px;
+     word-spacing: 1px;
+     line-height: 8px;
+     
 }
