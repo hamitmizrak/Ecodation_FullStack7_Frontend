@@ -10,60 +10,107 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Font awesome: CDN-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Font awesome: CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
 </head>
 
 <body class="ms-2 me-3">
 
-<!-- table - form  -->
+    <!-- table - form  -->
+    <!-- form -->
 
-<table class="table table-hover table-striped table-bordered table-dark table-sm" style="cursor: pointer;">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Adı</th>
-            <th>Soyadı</th>
-            <th>Number</th>
-            <th>Update</th>
-            <th>Show</th>
-            <th>Delete </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Adı 1</td>
-            <td>Soyadı 1</td>
-            <td>Numara 1</td>
-            <th><i class="fa-solid fa-info text-primary"></i></th>
-            <th><i class="fa-solid fa-eye text-info"></i></th>
-            <th><i class="fa-solid fa-trash-can text-danger"></i></th>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Adı 2</td>
-            <td>Soyadı 2</td>
-            <td>Numara 2</td>
-            <th><i class="fa-solid fa-info text-primary"></i></th>
-            <th><i class="fa-solid fa-eye text-info"></i></th>
-            <th><i class="fa-solid fa-trash-can text-danger"></i></th>
-       
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Adı 3</td>
-            <td>Soyadı 3</td>
-            <td>Numara 3</td>
-            <th><i class="fa-solid fa-info text-primary"></i></th>
-            <th><i class="fa-solid fa-eye text-info"></i></th>
-            <th><i class="fa-solid fa-trash-can text-danger"></i></th>
-        </tr>
-    </tbody>
-</table>
+    <!-- FORM -->
+    
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h1 class="text-center display-3 text-uppercase">Register</h1>
+            <form action="deneme.html" method="post" id="form_register" name="form_register">
+                <div class="form-group">
+                    <label for="name">Adınız:</label>
+                    <input type="text" class="form-control mb-3" name="surname" id="name" placeholder="name" autofocus="true" required="true" />
+                </div>
+        
+                <div class="form-group">
+                    <label for="surname">Soyadınız:</label>
+                    <input type="text" class="form-control mb-3"  name="surname" id="surname" placeholder="soyadınızı giriniz" autofocus="false"
+                        required="true" />
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control mb-3"  name="email" id="email" placeholder="Email adresiniz giriniz" autofocus="false"
+                        required="true" />
+                </div>
+        
+                <div class="form-group">
+                    <label for="passwd">Şifreniz:</label>
+                    <input type="password" class="form-control mb-3"  name="passwd" id="passwd" placeholder="passwd  giriniz" autofocus="false"
+                        required="true" />
+                </div>
+        
+                <div class="form-group">
+                    <label for="passwd"></label>
+                    <input type="reset" class="btn btn-danger" value="Temizle" />
+                    <button type="submit"  class="btn btn-primary" >Gönder</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+    
+
+    <br><br><br><br>
 
 
+    <!-- table -->
+    <!-- table Ödev: ID,Name, Surname, TCNumber 11haneli 123******41 createdDate: 01/15/2023 -->
+    <table class="table table-hover table-striped table-bordered table-dark table-sm" style="cursor: pointer;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Number</th>
+                <th>Update</th>
+                <th>Show</th>
+                <th>Delete </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Adı 1</td>
+                <td>Soyadı 1</td>
+                <td>Numara 1</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Adı 2</td>
+                <td>Soyadı 2</td>
+                <td>Numara 2</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Adı 3</td>
+                <td>Soyadı 3</td>
+                <td>Numara 3</td>
+                <th class="text-center"><i class="fa-solid fa-info text-primary"></i></th>
+                <th class="text-center"><i class="fa-solid fa-eye text-info"></i></th>
+                <th class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></th>
+            </tr>
+        </tbody>
+    </table>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
