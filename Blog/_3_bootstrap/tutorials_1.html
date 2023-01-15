@@ -14,26 +14,61 @@
 
 <body class="ms-2 me-3">
 
-    bs
+<!-- table - form  -->
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th>Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Adı 1</td>
+            <td>Soyadı 1</td>
+            <td>Numara 1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Adı 2</td>
+            <td>Soyadı 2</td>
+            <td>Numara 2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Adı 3</td>
+            <td>Soyadı 3</td>
+            <td>Numara 3</td>
+        </tr>
+    </tbody>
+</table>
+
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -45,41 +80,48 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-      </div>
+        </div>
     </nav>
-    
 
+    <br><br><br><br>
+    <a class="btn btn-primary" href="http://www.google.com">Tıkla</a>
     <!-- Flexbox container for aligning the toasts -->
-    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-end align-items-start" style="min-height: 200px;">
-    
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-end align-items-start"
+        style="min-height: 200px;">
+
         <!-- Then put toasts within -->
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-            <img src="" class="rounded me-2" alt="{4:Bootstrap}">
-            <strong class="me-auto">{4:Bootstrap}</strong>
-            <small>{5:11 mins ago}</small>
-            <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="toast-body">
-            Hello, world! This is a toast message.
-          </div>
+            <div class="toast-header">
+                <img src="" class="rounded me-2" alt="{4:Bootstrap}">
+                <strong class="me-auto">{4:Bootstrap}</strong>
+                <small>{5:11 mins ago}</small>
+                <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
         </div>
-      </div>
-    
-    
+    </div>
+
+
     <scrip>
-         $('.toast').toast(option)
+        $('.toast').toast(option)
     </scrip>
-   
+
+
+    <!-- 
+    Table 
+    RD(Css media query Bootstrap Query)
+    Form -->
 
 
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                    Dropdown
-                </button>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </button>
         <div class="dropdown-menu" aria-labelledby="triggerId">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item disabled" href="#">Disabled action</a>
@@ -101,7 +143,7 @@
 
     <!-- container -->
     <h1>container</h1>
-    list 
+    list
     <!-- bs5-list-default -->
     <ul class="list-group list-group-numbered">
         <li class="list-group-item active">Active item</li>
@@ -113,62 +155,67 @@
     </ul>
 
 
-    alert 
+    alert
     <!-- bs5-alert-default -->
     <div class="alert alert-danger" role="alert">
         <strong>Alert Heading</strong> Some Word
     </div>
-    
+
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
     </div>
 
 
-     accordion
+    accordion
     <div class="accordion" id="accordionExample">
         <!-- 1.alan -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            This is the first item's accordion body.
-          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    This is the first item's accordion body.
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#headingTwo" aria-expanded="true" aria-controls="headingTwo">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="headingTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            This is the first item's accordion body.
-          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#headingTwo"
+                    aria-expanded="true" aria-controls="headingTwo">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="headingTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    This is the first item's accordion body.
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    
-    modal 
+
+    modal
     <!-- Modal trigger button -->
     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
-      Click me
+        Click me
     </button>
-    
+
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     Body
@@ -180,15 +227,13 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <!-- Optional: Place to the bottom of scripts -->
     <script>
         const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    
+
     </script>
-   
-    table
 
     <hr>
     <div class="bg-primary shadow-lg">1.ALAN</div>
@@ -210,7 +255,6 @@
         <div class="p-3 bg-success h-75">height</div><br>
         <div class="p-3 bg-success h-100">height</div><br>
     </div>
-
 
     <br>
     <!-- width: -->
@@ -326,8 +370,6 @@
     <p class="h4">h4</p>
     <p class="h5">h5</p>
     <p class="h6">h6</p>
-
-
 
 
     <!-- Bootstrap JavaScript Libraries -->
