@@ -117,26 +117,43 @@
 //Math
 //case sensitive
 //üslü sayılar,karakök,yuvarlama, sin.cos etc
-console.log(Math.PI);
-console.log(Math.E);
+// console.log(Math.PI);
+// console.log(Math.E);
 
-console.log(Math.sqrt(16));
-console.log(Math.pow(2,5));
-console.log(Math.abs(-9));
-console.log(Math.min(99,4,5,2,5,-1000));
-console.log(Math.max(99,4,5,2,5,-1000));
+// console.log(Math.sqrt(16));
+// console.log(Math.pow(2,5));
+// console.log(Math.abs(-9));
+// console.log(Math.min(99,4,5,2,5,-1000));
+// console.log(Math.max(99,4,5,2,5,-1000));
 
-console.log(Math.floor(6.99));
-console.log(Math.ceil(6.01));
+// console.log(Math.floor(6.99));
+// console.log(Math.ceil(6.01));
 
-console.log(Math.round(6.5));
-console.log(Math.round(6.4));
+// console.log(Math.round(6.5));
+// console.log(Math.round(6.4));
 
-console.log(Math.sin(45));
-console.log(Math.sin(45));
+// console.log(Math.sin(45));
+// console.log(Math.sin(45));
 // console.log(Math.sIN(45));  ==> YAZILMAZ.
 
 // EV ÖDEVİ
 // Math function kullanarak hesap makinesi yapalım.
 // Kullanıcıdan alınan 2 tane veriye göre (+ - / * ) 4 işlem
 // Kullanıcıdan alınan 2 veriye göre büyük olanın abs,sqrt,floor,ceil
+
+//////////////////////////////////////////////////////////////////////////
+//SAYILAR
+let number1=14;
+console.log(number1);//sayıyı göster
+console.log(typeof number1); //türü
+number2=Number(number1); //cast
+
+//Math 
+console.log( Math.round(Math.sqrt(number2)));
+
+//random 
+console.log(Math.round( Math.random()*4+1));
+
+
+
+//KELIMELER
