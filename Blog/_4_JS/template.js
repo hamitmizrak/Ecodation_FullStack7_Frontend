@@ -115,6 +115,7 @@
 // console.log(value4);
 
 //Math
+//case sensitive
 //üslü sayılar,karakök,yuvarlama, sin.cos etc
 console.log(Math.PI);
 console.log(Math.E);
@@ -132,3 +133,10 @@ console.log(Math.round(6.5));
 console.log(Math.round(6.4));
 
 console.log(Math.sin(45));
+console.log(Math.sin(45));
+// console.log(Math.sIN(45));  ==> YAZILMAZ.
+
+// EV ÖDEVİ
+// Math function kullanarak hesap makinesi yapalım.
+// Kullanıcıdan alınan 2 tane veriye göre (+ - / * ) 4 işlem
+// Kullanıcıdan alınan 2 veriye göre büyük olanın abs,sqrt,floor,ceil
