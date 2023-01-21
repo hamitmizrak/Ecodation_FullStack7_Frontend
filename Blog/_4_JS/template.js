@@ -96,19 +96,39 @@
 
 //Sıklıkla göreceğimiz yapılar
 //undefined: tanımsız
-var value1;
-console.log(value1)
+// var value1;
+// console.log(value1)
 
 //NaN: not a number (Sayı değildir)
-var value2=44/"asd";
-console.log(value2);
+// var value2=44/"asd";
+// console.log(value2);
 
 //isNaN: it is not a number: bu bir sayı değildir. 
-//eğer false ise bu bir sayıdır. 
-var value3=44;
-console.log(isNaN(value3));
+//eğer false ise bu bir number. 
+//eğer true ise bu bir string. 
+// var value3="asd";
+// console.log(isNaN(value3));
 
 //Infinity: sonsuzluklar
 //bir sayıyı saıfıra bölemezsiniz.
-var value4=44/0;
-console.log(value4)
+// var value4=44/0;
+// console.log(value4);
+
+//Math
+//üslü sayılar,karakök,yuvarlama, sin.cos etc
+console.log(Math.PI);
+console.log(Math.E);
+
+console.log(Math.sqrt(16));
+console.log(Math.pow(2,5));
+console.log(Math.abs(-9));
+console.log(Math.min(99,4,5,2,5,-1000));
+console.log(Math.max(99,4,5,2,5,-1000));
+
+console.log(Math.floor(6.99));
+console.log(Math.ceil(6.01));
+
+console.log(Math.round(6.5));
+console.log(Math.round(6.4));
+
+console.log(Math.sin(45));
