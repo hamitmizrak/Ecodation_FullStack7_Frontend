@@ -136,10 +136,21 @@
 // console.log(Math.sin(45));
 // console.log(Math.sIN(45));  ==> YAZILMAZ.
 
-// EV ÖDEVİ
+// EV ÖDEVİ-1
 // Math function kullanarak hesap makinesi yapalım.
 // Kullanıcıdan alınan 2 tane veriye göre (+ - / * ) 4 işlem
 // Kullanıcıdan alınan 2 veriye göre büyük olanın abs,sqrt,floor,ceil
+
+
+// EV ÖDEVİ-2
+// Math Ödev
+// Kullanıcıda tarafından aldığımız 2 tane sayının
+// s1-) Bu sayılardan en küçüğü nedir ?
+// s2-) Bu sayılardan en büyüğü nedir ?
+// s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+// s5-) Bu sayılardan en küçüğü mutlak değeri nedir ?
+// s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
 //////////////////////////////////////////////////////////////////////////
 //SAYILAR
@@ -152,8 +163,40 @@ number2=Number(number1); //cast
 console.log( Math.round(Math.sqrt(number2)));
 
 //random 
-console.log(Math.round( Math.random()*4+1));
+console.log(Math.round( Math.random()*4+1)); // 1<=X<=4
 
+//bilimsel gösterim.
+let number3=140000;
+console.log(number3)
 
+let number4=14E+12;
+console.log(number4)
 
+//cast 1. Path
+let number5=Number("44");
+console.log(number5);
+
+//cast 2.path
+let number6=parseInt("44");
+console.log(number6);
+
+//sayı sistemleri
+let binaryData=0b11;
+console.log(binaryData);
+
+let octalData=0o11;
+console.log(octalData);
+
+let decimalData=1234565;
+console.log(decimalData);
+
+let hexadecimalData=0xA12CF;
+console.log(hexadecimalData);
+
+var k1=1422;
+console.log(k1);
+var k1=1515155;
+console.log(k1);
+
+/////////////////////////////////////////////////////////////////
 //KELIMELER
