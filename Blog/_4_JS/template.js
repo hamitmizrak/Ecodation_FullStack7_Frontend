@@ -35,5 +35,31 @@ console.log(_$degiskenAdi44);
 //$ ve  _ haricinde özel karakter veremeyiz.
 //üğşçöİ  vermeyelim.
 
+var data1=14525;
+console.log(data1);
+console.log(typeof data1);
+
+var data5=1452.52;
+console.log(data5);
+console.log(typeof data5);
+
+var data2= "Merhabalar";
+console.log(data2);
+console.log(typeof data2);
+
+var data3=[];
+console.log(data3);
+console.log(typeof data3);
+
+var data4={};
+console.log(data4);
+console.log(typeof data4);
+
+//whoisting
+value8=15155;
+var value8;
+console.log(value8)
+
+
 //let      //ES6
 //const   //ES6
