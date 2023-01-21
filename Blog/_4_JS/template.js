@@ -28,38 +28,51 @@
 //Variable 
 // isim sıfat kullanabilirsiniz.
 //Global değişkendir.
-var _$degiskenAdi44="Kastamonu";
-console.log(_$degiskenAdi44);
+// var _$degiskenAdi44="Kastamonu";
+// console.log(_$degiskenAdi44);
 //değişkenlerde
 //sayı ile başlanmaz
 //$ ve  _ haricinde özel karakter veremeyiz.
 //üğşçöİ  vermeyelim.
 
-var data1=14525;
-console.log(data1);
-console.log(typeof data1);
+// var data1=14525;
+// console.log(data1);
+// console.log(typeof data1);
 
-var data5=1452.52;
-console.log(data5);
-console.log(typeof data5);
+// var data5=1452.52;
+// console.log(data5);
+// console.log(typeof data5);
 
-var data2= "Merhabalar";
-console.log(data2);
-console.log(typeof data2);
+// var data2= "Merhabalar";
+// console.log(data2);
+// console.log(typeof data2);
 
-var data3=[];
-console.log(data3);
-console.log(typeof data3);
+// var data3=[];
+// console.log(data3);
+// console.log(typeof data3);
 
-var data4={};
-console.log(data4);
-console.log(typeof data4);
+// var data4={};
+// console.log(data4);
+// console.log(typeof data4);
 
-//whoisting
-value8=15155;
-var value8;
-console.log(value8)
-
+// //whoisting
+// value8=15155;
+// var value8;
+// console.log(value8)
 
 //let      //ES6
 //const   //ES6
+
+//operator
+var number1=20;
+var number2=2;
+console.log(number1+number2);
+console.log(number1-number2);
+console.log(number1*number2);
+console.log(number1/number2);
+console.log(number1%number2);
+
+//increment
+number2++;
+number2=number2+1;
+number2+=1;
