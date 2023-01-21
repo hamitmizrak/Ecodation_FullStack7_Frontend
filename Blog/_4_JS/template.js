@@ -64,15 +64,27 @@
 //const   //ES6
 
 //operator
-var number1=20;
-var number2=2;
-console.log(number1+number2);
-console.log(number1-number2);
-console.log(number1*number2);
-console.log(number1/number2);
-console.log(number1%number2);
+// var number1=20;
+// var number2=2;
+// console.log(number1+number2);
+// console.log(number1-number2);
+// console.log(number1*number2);
+// console.log(number1/number2);
+// console.log(number1%number2);
 
-//increment
-number2++;
-number2=number2+1;
-number2+=1;
+//increment postfix
+// number2++;
+// number2=number2+1;
+// number2+=1;
+
+//kullancııdan veri almak
+// var userData=prompt("Lütfen adınız yazınız");
+// console.log(userData)
+// cast
+
+// Kullanıcıdan aldığımız 2 veriyi toplama yapan JS algoritmasını yazınız ?
+var number1,number2,result;
+number1= Number(prompt("Lütfen 1.sayıyı giriniz"));
+number2= Number(prompt("Lütfen 2.sayıyı giriniz"));
+result=(number1+number2);
+console.log(result)
