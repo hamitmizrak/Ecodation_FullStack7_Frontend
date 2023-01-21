@@ -83,8 +83,32 @@
 // cast
 
 // Kullanıcıdan aldığımız 2 veriyi toplama yapan JS algoritmasını yazınız ?
-var number1,number2,result;
-number1= Number(prompt("Lütfen 1.sayıyı giriniz"));
-number2= Number(prompt("Lütfen 2.sayıyı giriniz"));
-result=(number1+number2);
-console.log(result)
+// dynamics variable
+// var number1,number2,result;
+// number1= Number(prompt("Lütfen 1.sayıyı giriniz"));
+// number2= Number(prompt("Lütfen 2.sayıyı giriniz"));
+// result=(number1+number2);
+// console.log(result);
+
+// database,  socket,string %90
+//console.log(Number(prompt("Lütfen 1.sayıyı giriniz"))+Number(prompt("Lütfen 2.sayıyı giriniz")));
+
+
+//Sıklıkla göreceğimiz yapılar
+//undefined: tanımsız
+var value1;
+console.log(value1)
+
+//NaN: not a number (Sayı değildir)
+var value2=44/"asd";
+console.log(value2);
+
+//isNaN: it is not a number: bu bir sayı değildir. 
+//eğer false ise bu bir sayıdır. 
+var value3=44;
+console.log(isNaN(value3));
+
+//Infinity: sonsuzluklar
+//bir sayıyı saıfıra bölemezsiniz.
+var value4=44/0;
+console.log(value4)
