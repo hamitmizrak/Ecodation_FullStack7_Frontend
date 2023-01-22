@@ -220,13 +220,18 @@ console.log(fullName.indexOf("Hamit"));
 console.log(fullName.search("Hamit"));
 console.log(fullName.lastIndexOf("Hamit"));
 
+// bireysel ödev: Emine
+// charAt ile charCodeAt ikisi arasındaki fark nedir ?
 console.log(fullName.charAt(1));
+console.log(fullName.charCodeAt(1));
 
 console.log(fullName.startsWith(" "));
 console.log(fullName.endsWith("t"));
 
 console.log(fullName.substring(7));
 console.log(fullName.substring(1,13)); //1<=X<=13-1
+
+console.log(fullName.replace(fullName,"bütün data değişti"));
 
 fullName=fullName
         .trim()
@@ -236,13 +241,14 @@ fullName=fullName
         .concat(".INC")
 console.log(fullName);
 
-
-
-
-
+// Örnek: Bir cümlede kendi isminiz geçiyorsa ilk geçen isminizi
+// büyük karakterli olarak değişitirelim ?
+// How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.
+// değişkene atama yaparak göstereceğiz. ?
+// indexOf("Hamit") toUpperCase() ==>  replace()
 
 //ÖDEV
-// kullanıcı tarafından girilen bir kelimenin
+// kullanıcı tarafından girilen bir kelimenin (prompt)
 //S-1) Kaç karakterlidir ?
 //S-2) boşluklar alınarak Kaç karakterlidir ?
 //S-3) bütün kelimeyi küçük harfle göstermek ?
