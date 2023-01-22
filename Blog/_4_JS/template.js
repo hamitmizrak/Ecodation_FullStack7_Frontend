@@ -354,7 +354,7 @@ let conditionalFunction2 = () => {
         console.log("1<=sayı<=5 dışındır");
     }
 }
-conditionalFunction2()
+//conditionalFunction2()
 
 // 1000 ms=1sn
 // switch case
@@ -382,4 +382,44 @@ let conditionalFunction3 = () => {
             break;
     }
 }
-conditionalFunction3()
+//conditionalFunction3()
+
+// return   ==> fonksiyonun durmasını sağlar.
+// break    ==> döngünün durmasını sağlar
+// continue ==> sadece o şarta çalışmaz hemen sonrasında devam eder.
+
+//////////////////////////////////////////////////////
+let loopData = () => {
+    console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 + 14 + 15 + 16 + 17 + 18 + 19 + 20);
+
+    //FOR 
+    //artırmada
+    // i++;
+    // i=i+1;
+    // i+=1;
+    let sum = 0;
+    for (let i = 1; i <= 20; i++) {
+        sum = sum + i;
+    }
+    console.log(sum);
+
+    //WHILE 
+    let sum2 = 0;
+    let k = 1;
+    while (k <= 20) {
+        sum2 += k;
+        k++;
+    }
+    console.log(sum2);
+
+    //DO-WHILE 
+    let sum3 = 0;
+    let m = 1;
+    do{ 
+        sum3 += m;
+        m++;
+    }while(m<=20);
+    console.log(sum3);
+}
+
+loopData()
