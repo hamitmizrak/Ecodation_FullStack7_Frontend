@@ -444,35 +444,35 @@ let loopData = () => {
 
 let numberOddEven = () => {
     let finishedNumber = Number(prompt("lütfen bitiş sayısını giriniz"));
-    let counter = 0,sum=0;
-    let oddCounter=0,oddSum=0,oddShow="";
-    let evenCounter=0,evenSum=0,evenShow="";
+    let counter = 0, sum = 0;
+    let oddCounter = 0, oddSum = 0, oddShow = "";
+    let evenCounter = 0, evenSum = 0, evenShow = "";
 
     try {
         for (let i = 1; i <= finishedNumber; i++) {
-        counter++;
-        sum+=i;
-        if(i%2==1){
-            oddCounter+=1;
-            oddSum+=i;
-            oddShow+=i+" ";
-        }else{
-            evenCounter+=1;
-            evenSum+=i;
-            evenShow+=i+" ";
+            counter++;
+            sum += i;
+            if (i % 2 == 1) {
+                oddCounter += 1;
+                oddSum += i;
+                oddShow += i + " ";
+            } else {
+                evenCounter += 1;
+                evenSum += i;
+                evenShow += i + " ";
+            }
         }
-    }
     } catch (error) {
         console.log(error);
         console.log(error.name);
         console.log(error.message);
     }
-    console.log("sayı adedi:"+counter);
-    console.log("toplam:"+sum);
+    console.log("sayı adedi:" + counter);
+    console.log("toplam:" + sum);
 
-    console.log("Tek sayılar:"+oddShow);
-    console.log("Tek sayı adeti:"+oddCounter);
-    console.log("Tek sayı toplamı:"+oddSum);
+    console.log("Tek sayılar:" + oddShow);
+    console.log("Tek sayı adeti:" + oddCounter);
+    console.log("Tek sayı toplamı:" + oddSum);
 }
 numberOddEven()
 
@@ -533,7 +533,7 @@ let data5 = () => {
 // 5-yuvarlama yapsın 6.0
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
-// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin
 // Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
 //NOT: cast kullalım ?
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
