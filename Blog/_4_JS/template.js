@@ -155,54 +155,89 @@
 
 //////////////////////////////////////////////////////////////////////////
 //SAYILAR
-let number1=14;
-console.log(number1);//sayıyı göster
-console.log(typeof number1); //türü
-number2=Number(number1); //cast
+// let number1=14;
+// console.log(number1);//sayıyı göster
+// console.log(typeof number1); //türü
+// number2=Number(number1); //cast
 
-//Math 
-console.log( Math.round(Math.sqrt(number2)));
+// //Math 
+// console.log( Math.round(Math.sqrt(number2)));
 
-//random 
-console.log(Math.round( Math.random()*4+1)); // 1<=X<=4
+// //random 
+// console.log(Math.round( Math.random()*4+1)); // 1<=X<=4
 
-//bilimsel gösterim.
-let number3=140000;
-console.log(number3)
+// //bilimsel gösterim.
+// let number3=140000;
+// console.log(number3)
 
-let number4=14E+12;
-console.log(number4)
+// let number4=14E+12;
+// console.log(number4)
 
-//cast 1. Path
-let number5=Number("44");
-console.log(number5);
+// //cast 1. Path
+// let number5=Number("44");
+// console.log(number5);
 
-//cast 2.path
-let number6=parseInt("44");
-console.log(number6);
+// //cast 2.path
+// let number6=parseInt("44");
+// console.log(number6);
 
-//sayı sistemleri
-let binaryData=0b11;
-console.log(binaryData);
+// //sayı sistemleri
+// let binaryData=0b11;
+// console.log(binaryData);
 
-let octalData=0o11;
-console.log(octalData);
+// let octalData=0o11;
+// console.log(octalData);
 
-let decimalData=1234565;
-console.log(decimalData);
+// let decimalData=1234565;
+// console.log(decimalData);
 
-let hexadecimalData=0xA12CF;
-console.log(hexadecimalData);
+// let hexadecimalData=0xA12CF;
+// console.log(hexadecimalData);
 
-var k1=1422;
-console.log(k1);
+// var k1=1422;
+// console.log(k1);
 
-var k1=1515155;
-console.log(k1);
+// var k1=1515155;
+// console.log(k1);
 
 //w3school 
 /////////////////////////////////////////////////////////////////
 //KELIMELER
+let fullName=" Hamit Mızrak java Hamit";
+// boşluk bir karakter midir ?
+console.log(fullName);
+console.log(typeof fullName);
+
+console.log(fullName.toLowerCase());
+console.log(fullName.toUpperCase());
+
+console.log(fullName.length);
+console.log(fullName.trim().length);
+
+// bireysel ödev: Mehmet
+// indexOf ile search ikiside arama ancak ikisi arasındaki fark nedir ?
+console.log(fullName.indexOf("Hamit"));
+console.log(fullName.search("Hamit"));
+console.log(fullName.lastIndexOf("Hamit"));
+
+console.log(fullName.charAt(1));
+
+console.log(fullName.startsWith(" "));
+console.log(fullName.endsWith("t"));
+
+console.log(fullName.substring(7));
+console.log(fullName.substring(1,13)); //1<=X<=13-1
+
+fullName=fullName
+        .trim()
+        .substring(0,5)
+        .toUpperCase()
+        .charAt(0)
+        .concat(".INC")
+console.log(fullName);
+
+
+
 
 
 
