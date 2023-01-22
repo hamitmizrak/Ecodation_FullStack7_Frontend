@@ -1,6 +1,7 @@
 // alert("Denememe");
 // window.alert("window.alert");
 // document.write("data yazdıldı");
+// console.log("deneme")
 
 // interpreter nedir ?
 // JS senkron yapı sistemi nedir ?
@@ -94,12 +95,12 @@
 //console.log(Number(prompt("Lütfen 1.sayıyı giriniz"))+Number(prompt("Lütfen 2.sayıyı giriniz")));
 
 
-//Sıklıkla göreceğimiz yapılar
-//undefined: tanımsız
+// Sıklıkla göreceğimiz yapılar
+// undefined: tanımsız
 // var value1;
 // console.log(value1)
 
-//NaN: not a number (Sayı değildir)
+// NaN: not a number (Sayı değildir)
 // var value2=44/"asd";
 // console.log(value2);
 
@@ -195,8 +196,24 @@ console.log(hexadecimalData);
 
 var k1=1422;
 console.log(k1);
+
 var k1=1515155;
 console.log(k1);
 
+//w3school 
 /////////////////////////////////////////////////////////////////
 //KELIMELER
+
+
+
+//ÖDEV
+// kullanıcı tarafından girilen bir kelimenin
+//S-1) Kaç karakterlidir ?
+//S-2) boşluklar alınarak Kaç karakterlidir ?
+//S-3) bütün kelimeyi küçük harfle göstermek ?
+//S-4) bütün kelimeyi büyük harfle göstermek ?
+//S-5) ilk harf nedir  ?
+//S-6) girdiğiniz kelime java ile başlıyor mu  ?
+//S-7) girdiğiniz kelimenin sonuna "-ben js öğreniyorum"   ?
+//S-8) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin   ?
+//S-9) Kullanıcıdan alınan başka bir kelimeyle birinci olan kelimeyle yer değiştirmek ?
