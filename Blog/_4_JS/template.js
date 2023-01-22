@@ -241,12 +241,6 @@
 //         .concat(".INC")
 // console.log(fullName);
 
-// Örnek: Bir cümlede kendi isminiz geçiyorsa ilk geçen isminizi
-// büyük karakterli olarak değiştirelim ?
-// How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit data.
-// değişkene atama yaparak göstereceğiz. ?
-// indexOf("Hamit") toUpperCase() ==>  replace()
-let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
 
 
 //ÖDEV
@@ -264,29 +258,58 @@ let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me t
 /////////////////////////////////////////////////////////////////parametresizReturnsuz
 //Function
 //1
-function parametresizReturnsuz(){
-    console.log("parametresiz Returnsuz");
+// function parametresizReturnsuz(){
+//     console.log("parametresiz Returnsuz");
+// }
+// parametresizReturnsuz()
+
+// //2
+// function parametreliReturnsuz(number){
+//     console.log("parametreli Returnsuz: "+Math.sqrt(number));
+// }
+// parametreliReturnsuz(16)
+
+// //3
+// function parametresizReturnlu(){
+//     return "parametresiz Returnlu"
+// }
+// let value3= parametresizReturnlu();
+// console.log(value3);
+
+
+// //4
+// function parametreliReturnlu(fullName){
+//     return "parametreli Returnlu "+fullName;
+// }
+// let value4= parametreliReturnlu("java");
+// console.log(value4)
+
+
+// Function ==>  parametreli Returnlu
+// Örnek: Bir cümlede kendi isminiz geçiyorsa ilk geçen isminizi
+// büyük karakterli olarak değiştirelim ?
+// How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit data.
+// değişkene atama yaparak göstereceğiz. ?
+// indexOf("Hamit") toUpperCase() ==>  replace()
+let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
+
+///////////////////////////////////////////////////////////parametreliReturnlu
+// Normal function 
+function normalFunction(){
+    console.log("normal Function")
 }
-parametresizReturnsuz()
+normalFunction()
 
-//2
-function parametreliReturnsuz(number){
-    console.log("parametreli Returnsuz: "+Math.sqrt(number));
+// Anonymous function
+let anonymousFunction= function (){
+    console.log("anonymous Function")
 }
-parametreliReturnsuz(16)
+anonymousFunction()
 
-//3
-function parametresizReturnlu(){
-    return "parametresiz Returnlu"
+// Arrow function 
+let arrowFunction= ()=>{
+    console.log("arrow Function ")
 }
-let value3= parametresizReturnlu();
-console.log(value3);
+arrowFunction()
 
-
-
-//4
-function parametreliReturnlu(fullName){
-    return "parametreli Returnlu "+fullName;
-}
-let value4= parametreliReturnlu("java");
-console.log(value4)
+// Immediate function
