@@ -294,22 +294,29 @@
 let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
 
 ///////////////////////////////////////////////////////////parametreliReturnlu
+
+// Immediate function ()();
+(
+    function immediaFunction(){
+        console.log("Immediate Function")
+    }
+)();
+
 // Normal function 
 function normalFunction(){
     console.log("normal Function")
 }
 normalFunction()
 
-// Anonymous function
+// Anonymous function (ES5)
 let anonymousFunction= function (){
     console.log("anonymous Function")
 }
 anonymousFunction()
 
-// Arrow function 
+// Arrow function  (ES6)
 let arrowFunction= ()=>{
     console.log("arrow Function ")
 }
 arrowFunction()
 
-// Immediate function
