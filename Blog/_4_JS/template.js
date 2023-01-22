@@ -415,10 +415,10 @@ let loopData = () => {
     //DO-WHILE 
     let sum3 = 0;
     let m = 1;
-    do{ 
+    do {
         sum3 += m;
         m++;
-    }while(m<=20);
+    } while (m <= 20);
     console.log(sum3);
 }
 //loopData()
@@ -442,39 +442,48 @@ let loopData = () => {
 //Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
 //Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
 
+let numberOddEven = () => {
+    let finishedNumber = Number(prompt("lütfen bitiş sayısını giriniz"));
+    let counter = 0,sum=0;
+    for (let i = 1; i <= finishedNumber; i++) {
+        counter++;
+    }
+    console.log("sayı adedi:"+counter);
+}
+numberOddEven()
 
 ////////////////////////////////////////////conditionalFunction
-let data4=()=>{
-let result=5/5;
-console.log(result);
-//Exception handling : try-catch-finally throw
-try {
-    let result2=5/0;
-    console.log(result2);
-} catch (error) {
-    console.log(error.name);
-}finally{
-    console.log("database.close");
-    console.log("port.close");
-}
-
-console.log("continue...");
-}
-//data4()
-
-let data5=()=>{
-    let result=5/5;
+let data4 = () => {
+    let result = 5 / 5;
     console.log(result);
     //Exception handling : try-catch-finally throw
     try {
-      merhabalar
+        let result2 = 5 / 0;
+        console.log(result2);
+    } catch (error) {
+        console.log(error.name);
+    } finally {
+        console.log("database.close");
+        console.log("port.close");
+    }
+
+    console.log("continue...");
+}
+//data4()
+
+let data5 = () => {
+    let result = 5 / 5;
+    console.log(result);
+    //Exception handling : try-catch-finally throw
+    try {
+        merhabalar
     } catch (error) {
         console.log(error.name);
         console.log(error.message);
-    }finally{
+    } finally {
         console.log("database.close");
     }
-    
     console.log("continue...");
-    }
-    data5()
+}
+//data5()
+///////////////////////////////////////////
