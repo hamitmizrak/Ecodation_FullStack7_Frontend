@@ -291,7 +291,7 @@
 // How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit data.
 // değişkene atama yaparak göstereceğiz. ?
 // indexOf("Hamit") toUpperCase() ==>  replace()
-let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
+let vocabulary = "How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
 
 ///////////////////////////////////////////////////////////
 
@@ -322,38 +322,64 @@ let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me t
 
 ///////////////////////////////////////////////////////////
 // Conditional (Karar mekanizması)
-let conditionalFunction= ()=>{
+let conditionalFunction = () => {
     // Eğer kullanıcı adı karakter sayıyı 10 büyükse ekrana büyük 
     // yoksa küçük yazsın
-   let fullName="Servlet JSP JSF";
-   if(fullName.length>10){
-    console.log("büyük");
-   }else{
-    console.log("küçük");
-   }
+    let fullName = "Servlet JSP JSF";
+    if (fullName.length > 10) {
+        console.log("büyük");
+    } else {
+        console.log("küçük");
+    }
 
-   //Kısaltma Ternary Operator(if-else)
-   let result2=(fullName.length>10) ? "büyük" : "küçük";
-   console.log(result2);
+    //Kısaltma Ternary Operator(if-else)
+    let result2 = (fullName.length > 10) ? "büyük" : "küçük";
+    console.log(result2);
 }
 //conditionalFunction()
-
-
-let conditionalFunction2= ()=>{
+let conditionalFunction2 = () => {
     // saat örneği: 8 tane seçenek
-    let numberData=5;
-    if(numberData==1){
+    let numberData = 5;
+    if (numberData == 1) {
         console.log("sayı 1");
-    }else if(numberData==2){
+    } else if (numberData == 2) {
         console.log("sayı 2");
-    }else if(numberData==3){
+    } else if (numberData == 3) {
         console.log("sayı 3");
-    }else if(numberData==4){
+    } else if (numberData == 4) {
         console.log("sayı 4");
-    }else if(numberData==5){
+    } else if (numberData == 5) {
         console.log("sayı 5");
-    }else{
+    } else {
         console.log("1<=sayı<=5 dışındır");
     }
 }
 conditionalFunction2()
+
+// 1000 ms=1sn
+// switch case
+let conditionalFunction3 = () => {
+    // saat örneği: 8 tane seçenek
+    let numberData = 5;
+    switch (numberData) {
+        case 1:
+            console.log("sayı 1");
+            break;
+        case 2:
+            console.log("sayı 2");
+            break;
+        case 3:
+            console.log("sayı 3");
+            break;
+        case 4:
+            console.log("sayı 4");
+            break;
+        case 5:
+            console.log("sayı 5");
+            break;
+        default:
+            console.log("1<=sayı<=5 dışındır");
+            break;
+    }
+}
+conditionalFunction3()
