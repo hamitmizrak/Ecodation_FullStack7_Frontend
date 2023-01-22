@@ -293,30 +293,67 @@
 // indexOf("Hamit") toUpperCase() ==>  replace()
 let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
 
-///////////////////////////////////////////////////////////parametreliReturnlu
+///////////////////////////////////////////////////////////
 
 // Immediate function ()();
-(
-    function immediaFunction(){
-        console.log("Immediate Function")
+// (
+//     function immediaFunction(){
+//         console.log("Immediate Function")
+//     }
+// )();
+
+// // Normal function 
+// function normalFunction(){
+//     console.log("normal Function")
+// }
+// normalFunction()
+
+// // Anonymous function (ES5)
+// let anonymousFunction= function (){
+//     console.log("anonymous Function")
+// }
+// anonymousFunction()
+
+// // Arrow function  (ES6)
+// let arrowFunction= ()=>{
+//     console.log("arrow Function ")
+// }
+// arrowFunction()
+
+///////////////////////////////////////////////////////////
+// Conditional (Karar mekanizması)
+let conditionalFunction= ()=>{
+    // Eğer kullanıcı adı karakter sayıyı 10 büyükse ekrana büyük 
+    // yoksa küçük yazsın
+   let fullName="Servlet JSP JSF";
+   if(fullName.length>10){
+    console.log("büyük");
+   }else{
+    console.log("küçük");
+   }
+
+   //Kısaltma Ternary Operator(if-else)
+   let result2=(fullName.length>10) ? "büyük" : "küçük";
+   console.log(result2);
+}
+//conditionalFunction()
+
+
+let conditionalFunction2= ()=>{
+    // saat örneği: 8 tane seçenek
+    let numberData=5;
+    if(numberData==1){
+        console.log("sayı 1");
+    }else if(numberData==2){
+        console.log("sayı 2");
+    }else if(numberData==3){
+        console.log("sayı 3");
+    }else if(numberData==4){
+        console.log("sayı 4");
+    }else if(numberData==5){
+        console.log("sayı 5");
+    }else{
+        console.log("1<=sayı<=5 dışındır");
     }
-)();
-
-// Normal function 
-function normalFunction(){
-    console.log("normal Function")
 }
-normalFunction()
-
-// Anonymous function (ES5)
-let anonymousFunction= function (){
-    console.log("anonymous Function")
-}
-anonymousFunction()
-
-// Arrow function  (ES6)
-let arrowFunction= ()=>{
-    console.log("arrow Function ")
-}
-arrowFunction()
-
+conditionalFunction2()
