@@ -411,7 +411,7 @@ let loopData = () => {
         k++;
     }
     console.log(sum2);
-
+    //Fira  google 
     //DO-WHILE 
     let sum3 = 0;
     let m = 1;
@@ -421,5 +421,44 @@ let loopData = () => {
     }while(m<=20);
     console.log(sum3);
 }
+//loopData()
 
-loopData()
+//DEBUG nasıl atılır ?
+// For -if -break-continue-return examples 
+//ÖDEV (if-else for break continue)
+//Fonksiyonlarla
+//Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
+//kullancı: 5 verdi diyelim 1<=X<=5
+//1.adım: kaç tane sayı var ?
+//2.adım: sayı toplamları var ?
+//3.adım: kaç tane tek  sayı var ?
+//4.adım: tek sayılar toplamı ?
+//5.adım: tek sayılar gösterelim ?
+//6.adım: kaç tane çift  sayı var ?
+//7.adım: çift sayılar toplamı ?
+//8.adım: çift sayılar gösterelim ?
+//Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+//Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
+//Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
+
+
+////////////////////////////////////////////conditionalFunction
+let data4=()=>{
+let result=5/5;
+console.log(result);
+
+//Exception handling : try-catch-finally throw
+try {
+    let result2=5/0;
+    console.log(result2);
+} catch (error) {
+    console.log(error.name);
+}finally{
+    console.log("database.close");
+    console.log("port.close");
+}
+
+console.log("continue...");
+}
+data4()
