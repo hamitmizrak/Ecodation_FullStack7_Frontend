@@ -203,49 +203,51 @@
 //w3school 
 /////////////////////////////////////////////////////////////////
 //KELIMELER
-let fullName=" Hamit Mızrak java Hamit";
-// boşluk bir karakter midir ?
-console.log(fullName);
-console.log(typeof fullName);
+// let fullName=" Hamit Mızrak java Hamit";
+// // boşluk bir karakter midir ?
+// console.log(fullName);
+// console.log(typeof fullName);
 
-console.log(fullName.toLowerCase());
-console.log(fullName.toUpperCase());
+// console.log(fullName.toLowerCase());
+// console.log(fullName.toUpperCase());
 
-console.log(fullName.length);
-console.log(fullName.trim().length);
+// console.log(fullName.length);
+// console.log(fullName.trim().length);
 
-// bireysel ödev: Mehmet
-// indexOf ile search ikiside arama ancak ikisi arasındaki fark nedir ?
-console.log(fullName.indexOf("Hamit"));
-console.log(fullName.search("Hamit"));
-console.log(fullName.lastIndexOf("Hamit"));
+// // bireysel ödev: Mehmet
+// // indexOf ile search ikiside arama ancak ikisi arasındaki fark nedir ?
+// console.log(fullName.indexOf("Hamit"));
+// console.log(fullName.search("Hamit"));
+// console.log(fullName.lastIndexOf("Hamit"));
 
-// bireysel ödev: Emine
-// charAt ile charCodeAt ikisi arasındaki fark nedir ?
-console.log(fullName.charAt(1));
-console.log(fullName.charCodeAt(1));
+// // bireysel ödev: Emine
+// // charAt ile charCodeAt ikisi arasındaki fark nedir ?
+// console.log(fullName.charAt(1));
+// console.log(fullName.charCodeAt(1));
 
-console.log(fullName.startsWith(" "));
-console.log(fullName.endsWith("t"));
+// console.log(fullName.startsWith(" "));
+// console.log(fullName.endsWith("t"));
 
-console.log(fullName.substring(7));
-console.log(fullName.substring(1,13)); //1<=X<=13-1
+// console.log(fullName.substring(7));
+// console.log(fullName.substring(1,13)); //1<=X<=13-1
 
-console.log(fullName.replace(fullName,"bütün data değişti"));
+// console.log(fullName.replace(fullName,"bütün data değişti"));
 
-fullName=fullName
-        .trim()
-        .substring(0,5)
-        .toUpperCase()
-        .charAt(0)
-        .concat(".INC")
-console.log(fullName);
+// fullName=fullName
+//         .trim()
+//         .substring(0,5)
+//         .toUpperCase()
+//         .charAt(0)
+//         .concat(".INC")
+// console.log(fullName);
 
 // Örnek: Bir cümlede kendi isminiz geçiyorsa ilk geçen isminizi
-// büyük karakterli olarak değişitirelim ?
-// How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.
+// büyük karakterli olarak değiştirelim ?
+// How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit data.
 // değişkene atama yaparak göstereceğiz. ?
 // indexOf("Hamit") toUpperCase() ==>  replace()
+let vocabulary="How are you today ? I am ok , and My name is Hamit and you? me too my name Hamit.";
+
 
 //ÖDEV
 // kullanıcı tarafından girilen bir kelimenin (prompt)
@@ -258,3 +260,33 @@ console.log(fullName);
 //S-7) girdiğiniz kelimenin sonuna "-ben js öğreniyorum"   ?
 //S-8) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin   ?
 //S-9) Kullanıcıdan alınan başka bir kelimeyle birinci olan kelimeyle yer değiştirmek ?
+
+/////////////////////////////////////////////////////////////////parametresizReturnsuz
+//Function
+//1
+function parametresizReturnsuz(){
+    console.log("parametresiz Returnsuz");
+}
+parametresizReturnsuz()
+
+//2
+function parametreliReturnsuz(number){
+    console.log("parametreli Returnsuz: "+Math.sqrt(number));
+}
+parametreliReturnsuz(16)
+
+//3
+function parametresizReturnlu(){
+    return "parametresiz Returnlu"
+}
+let value3= parametresizReturnlu();
+console.log(value3);
+
+
+
+//4
+function parametreliReturnlu(fullName){
+    return "parametreli Returnlu "+fullName;
+}
+let value4= parametreliReturnlu("java");
+console.log(value4)
