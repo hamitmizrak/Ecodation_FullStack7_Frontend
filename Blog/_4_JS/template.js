@@ -447,7 +447,6 @@ let loopData = () => {
 let data4=()=>{
 let result=5/5;
 console.log(result);
-
 //Exception handling : try-catch-finally throw
 try {
     let result2=5/0;
@@ -461,4 +460,21 @@ try {
 
 console.log("continue...");
 }
-data4()
+//data4()
+
+let data5=()=>{
+    let result=5/5;
+    console.log(result);
+    //Exception handling : try-catch-finally throw
+    try {
+      merhabalar
+    } catch (error) {
+        console.log(error.name);
+        console.log(error.message);
+    }finally{
+        console.log("database.close");
+    }
+    
+    console.log("continue...");
+    }
+    data5()
