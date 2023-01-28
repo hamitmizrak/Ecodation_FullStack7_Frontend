@@ -561,3 +561,26 @@ let degreeToFahrenhayt=()=>{
 
 /////////////////////////////////////////////////////////////////conditionalFunction
 //Diziler
+let arrayData=()=>{
+let data1=true;
+//console.log(typeof data1);
+
+
+let data2=[1,2,3,4,5,6];
+//console.log(typeof data2);
+// console.log(data2[0]);//diziler sıfırdan başlar
+// console.log(data2[5]);//diziler sıfırdan başlar
+// console.log("eleman sayısı:"+data2.length);
+
+
+// data2[7]=7;
+// console.log("son eleman: "+data2[data2.length-1]);
+
+//donguler: 
+let arrayData=[1,2,3,4,5,6];
+for (let i = 0; i < arrayData.length; i++) {
+    console.log(arrayData[i]);
+}
+
+}
+arrayData()
