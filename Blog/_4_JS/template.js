@@ -711,9 +711,9 @@ let functionData6 = () => {
         console.log(temp.toUpperCase().substring(0,2))
     });
 }
-functionData6()
+//functionData6()
 
-console.log("**************")
+//console.log("**************")
 
 //splice() : belirlediğimiz yerden itibaren gösterilmesi
 let functionData7= () => {
@@ -740,4 +740,26 @@ let functionData7= () => {
    
     console.log("**************")
 }
-functionData7()
+//functionData7()
+
+// forEach 
+let functionData8= () => {
+    let copyArray = cityName();
+
+    copyArray.forEach((value) => {
+        console.log(value)
+    });
+
+    console.log("**************")
+    copyArray.forEach((value,index) => {
+        console.log(value+" "+index)
+    });
+
+    console.log("**************")
+    copyArray.forEach((value,index,arr) => {
+        console.log(value+" "+index+" "+arr)
+    });
+}
+functionData8()
+
+// interpolation
