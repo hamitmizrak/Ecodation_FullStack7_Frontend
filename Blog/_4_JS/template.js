@@ -682,7 +682,7 @@ let functionData4 = () => {
 }
 //functionData4() 
 
-
+//toString() , join()
 let functionData5 = () => {
     let copyArray = cityName();
 
@@ -694,4 +694,21 @@ let functionData5 = () => {
     let str2 = copyArray.join(" , ");
     console.log(str2.toUpperCase().concat(" .XYZ"))
 }
-functionData5()
+//functionData5()
+
+
+//slice() : belirtilen yerden itibaren gösterir.
+let functionData6 = () => {
+    let copyArray = cityName();
+
+    copyArray.forEach((temp) => {
+        console.log(temp)
+    });
+
+    console.log("**************")
+
+    copyArray.slice(1).forEach((temp) => {
+        console.log(temp.toUpperCase().substring(0,2))
+    });
+}
+functionData6()
