@@ -520,12 +520,12 @@ let data5 = () => {
 //y=3x+4k ==>1.dereceden 2bilinmeyenli denklem algoritması
 //Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
 
-let degreeNot=()=>{
-    let x,k,y;
-    x=Number( prompt("lütfen x değerini giriniz")) ;
-    k=Number( prompt("lütfen k değerini giriniz"));
-    y=3*x+4*k;
-    window.alert("sonuc: "+y);
+let degreeNot = () => {
+    let x, k, y;
+    x = Number(prompt("lütfen x değerini giriniz"));
+    k = Number(prompt("lütfen k değerini giriniz"));
+    y = 3 * x + 4 * k;
+    window.alert("sonuc: " + y);
 }
 //degreeNot()
 
@@ -534,11 +534,11 @@ let degreeNot=()=>{
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 //Formül: (derece*9/5)+32
 
-let degreeToFahrenhayt=()=>{
-    let degree,fahrenhayt;
-    degree=Number(prompt("lütfen dereceyi giriniz")) ;
-    fahrenhayt=(degree*9/5)+32;
-    window.alert("sonuc: "+fahrenhayt);
+let degreeToFahrenhayt = () => {
+    let degree, fahrenhayt;
+    degree = Number(prompt("lütfen dereceyi giriniz"));
+    fahrenhayt = (degree * 9 / 5) + 32;
+    window.alert("sonuc: " + fahrenhayt);
 }
 //degreeToFahrenhayt()
 
@@ -561,39 +561,61 @@ let degreeToFahrenhayt=()=>{
 
 /////////////////////////////////////////////////////////////////conditionalFunction
 //Diziler
-let arrayData=()=>{
-let data1=true;
-//console.log(typeof data1);
+let arrayData = () => {
+    let data1 = true;
+    //console.log(typeof data1);
 
 
-let data2=[1,2,3,4,5,6];
-//console.log(typeof data2);
-// console.log(data2[0]);//diziler sıfırdan başlar
-// console.log(data2[5]);//diziler sıfırdan başlar
-// console.log("eleman sayısı:"+data2.length);
+    let data2 = [1, 2, 3, 4, 5, 6];
+    //console.log(typeof data2);
+    // console.log(data2[0]);//diziler sıfırdan başlar
+    // console.log(data2[5]);//diziler sıfırdan başlar
+    // console.log("eleman sayısı:"+data2.length);
 
 
-// data2[7]=7;
-// console.log("son eleman: "+data2[data2.length-1]);
+    // data2[7]=7;
+    // console.log("son eleman: "+data2[data2.length-1]);
 
-//donguler: iterative loop 
-             // 0        1 2 3 4 5
-let arrayData=["Malatya",2,3,4,5,true];
-for (let i = 0; i < arrayData.length; i++) {
-    console.log(arrayData[i]);
-}
-console.log("+++++++++++++++++++++++++");
-//for in:eleman sırasına erişmek 
-for( let temp in  arrayData){
-console.log(temp)
-}
-
-console.log("+++++++++++++++++++++++++");
-
-//for of: elemanlara erişmek
-for( let temp  of arrayData){
-    console.log(temp)
-}
+    //donguler: iterative loop 
+    // 0        1 2 3 4 5
+    let arrayData = ["Malatya", 2, 3, 4, 5, true];
+    for (let i = 0; i < arrayData.length; i++) {
+        console.log(arrayData[i]);
+    }
 
 }
-arrayData()
+//arrayData()
+
+//Döngüler
+let functionData2 = () => {
+
+    let arrayData = ["Malatya", 2, 3, 4, 5, true];
+
+    //1-) iterative loop
+    // 0        1 2 3 4 5
+    for (let i = 0; i < arrayData.length; i++) {
+        console.log(arrayData[i]);
+    }
+    console.log("+++++++++++++++++++++++++\n*forIn*");
+
+
+    //2-) for in:eleman sırasına erişmek 
+    for (let temp in arrayData) {
+        console.log(temp+" ==> "+arrayData[temp])
+    }
+
+    console.log("+++++++++++++++++++++++++\n*forOf*");
+
+    //3-) for of: elemanlara erişmek
+    for (let temp of arrayData) {
+        console.log(temp)
+    }
+
+    console.log("+++++++++++++++++++++++++\n*forEach*");
+    //4-) ForEach 
+    arrayData.forEach(function(temp){
+        console.log(temp)
+    });
+
+}
+functionData2()
