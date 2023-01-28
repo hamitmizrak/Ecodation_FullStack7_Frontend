@@ -777,15 +777,34 @@ let functionData9= () => {
 }
 //functionData9()
 
-//filter interpolation
-//filter().forEach()
+//filter().forEach() => interpolation(backtick ``)
 let functionData10= () => {
-    //backtick  ``
+    // filter: return yazıyoruz ki bize değer döndersin
     cityName().filter((value,index,arr) => {
-          return value.startsWith("S")
+          let data=value.startsWith("S");
+        return data;
         //console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     }).forEach((value,index,arr) => {
         console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     });
 }
-functionData10()
+//functionData10()
+
+
+//map().filter().forEach() => interpolation(backtick ``)
+let functionData11= () => {
+    // filter: return yazıyoruz ki bize değer döndersin
+    cityName().map((value,index,arr) => {
+        return value.concat("XYZ");
+    }).forEach((value,index,arr) => {
+        console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
+    });
+}
+functionData11()
+
+//Örnek 
+// rastgele 10 elemanlı sayı oluşturalım.  ==> (random)
+// bu sayılardan tek olanları bulalım.  ==> (filter)
+// bu tek sayılaraın sonuna 5 ekleyelim   ==> (map)
+// buradaki sayıları ekranda gösterelim. ?   ==> (forEach)
+// bu şarta uyan kaç tane sayı vardır ? ==>   ==> (counter)
