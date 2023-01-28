@@ -856,14 +856,20 @@ let normalResult = () => {
 
 console.log("*********************************");
 
-let mapFilterForEach=()=>{
-    let count=0;
-    arrayRandom()
-        .filter( (value)=>{return value%2==1; })
-        .map((value)=>{return value+5;})
-        .forEach((value,index)=>{
+let mapFilterForEach = () => {
+    let count = 0;
+    let data = arrayRandom()
+        .filter((value) => { return value % 2 == 1; });
+
+    data.forEach((value) => {
+        console.log(`VALUE: ${value}`);
+    });
+
+    console.log("+++++++++++++++++++++++")
+    data.map((value) => { return value + 5; })
+        .forEach((value, index) => {
             console.log(`VALUE: ${value} index: ${index}`);
-        count++;
+            count++;
         });
     console.log(` ${count}`);
 }
@@ -880,8 +886,8 @@ mapFilterForEach()
 
 // 2.ÖDEV
 // ÖDEV  map,filter, forEach ile yapalım.
-// Türkiye illerinden  10 tanesini bir diziye eklelim . 
+// Türkiye illerinden  10 tanesini bir diziye eklelim .
 // Bu illerin küçükten büyüğe sıralıyalım (sort)
-// İllerden A ile başlayanların (filter) 
+// İllerden A ile başlayanların (filter)
 // her bir karakterini büyük harfle çevirelim (map ==> toUppercase)  ve karakter sayısını belirleyelim.
 // adana ==> ADANA (5)
