@@ -474,7 +474,7 @@ let numberOddEven = () => {
     console.log("Tek sayı adeti:" + oddCounter);
     console.log("Tek sayı toplamı:" + oddSum);
 }
-numberOddEven()
+//numberOddEven()
 
 ////////////////////////////////////////////conditionalFunction
 let data4 = () => {
@@ -517,11 +517,31 @@ let data5 = () => {
 //NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
 //NOT: değişken olarak var,let,const kullanalım.
 //Örnek-1
-//y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
-//Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
+//y=3x+4k ==>1.dereceden 2bilinmeyenli denklem algoritması
+//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
+
+let degreeNot=()=>{
+    let x,k,y;
+    x=Number( prompt("lütfen x değerini giriniz")) ;
+    k=Number( prompt("lütfen k değerini giriniz"));
+    y=3*x+4*k;
+    window.alert("sonuc: "+y);
+}
+//degreeNot()
+
+
 //örnek-2
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
 //Formül: (derece*9/5)+32
+
+let degreeToFahrenhayt=()=>{
+    let degree,fahrenhayt;
+    degree=Number(prompt("lütfen dereceyi giriniz")) ;
+    fahrenhayt=(degree*9/5)+32;
+    window.alert("sonuc: "+fahrenhayt);
+}
+//degreeToFahrenhayt()
+
 //örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
 //4+3*2(3:3-1*6+9:1+(3:3))
 //Örnek-4: Aşağıdaki örnekleri math ile çözelim ?
@@ -539,3 +559,5 @@ let data5 = () => {
 // Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
 //eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
+/////////////////////////////////////////////////////////////////conditionalFunction
+//Diziler
