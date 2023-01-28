@@ -576,10 +576,23 @@ let data2=[1,2,3,4,5,6];
 // data2[7]=7;
 // console.log("son eleman: "+data2[data2.length-1]);
 
-//donguler: 
-let arrayData=[1,2,3,4,5,6];
+//donguler: iterative loop 
+             // 0        1 2 3 4 5
+let arrayData=["Malatya",2,3,4,5,true];
 for (let i = 0; i < arrayData.length; i++) {
     console.log(arrayData[i]);
+}
+console.log("+++++++++++++++++++++++++");
+//for in:eleman sırasına erişmek 
+for( let temp in  arrayData){
+console.log(temp)
+}
+
+console.log("+++++++++++++++++++++++++");
+
+//for of: elemanlara erişmek
+for( let temp  of arrayData){
+    console.log(temp)
 }
 
 }
