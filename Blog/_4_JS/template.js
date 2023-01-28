@@ -760,6 +760,19 @@ let functionData8= () => {
         console.log(value+" "+index+" "+arr)
     });
 }
-functionData8()
+//functionData8()
 
-// interpolation
+// interpolation forEach 
+let functionData9= () => {
+    let copyArray = cityName();
+
+    copyArray.forEach((value,index,arr) => {
+        console.log("Value: "+value+" Index:  "+index+" Array "+arr)
+    });
+
+    //backtick  ``
+    copyArray.forEach((value,index,arr) => {
+        console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
+    });
+}
+functionData9()
