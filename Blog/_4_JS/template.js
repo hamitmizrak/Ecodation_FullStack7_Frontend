@@ -804,15 +804,14 @@ let functionData11 = () => {
 
 // Örnek 
 // 1.YOL normal diziyle yapalım.
-// 2.YOL map,filter, forEach ile yapalım.
-// rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
-// bu sayılardan tek olanları bulalım.          ==> (filter)
-// bu tek sayıların sonuna 5 ekleyelim          ==> (map)
-// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
-// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+// rastgele 10 elemanlı bir dizi  oluşturalım.  
+// bu sayılardan tek olanları bulalım.   
+// bu tek sayıların sonuna 5 ekleyelim   
+// buradaki sayıları ekranda gösterelim. ?     
+// bu şarta uyan kaç tane sayı vardır ?      
 
-// 1.YOL normal diziyle yapalım.
 
+// RASTGELE 10 ELEMAN
 let arrayRandom = () => {
     //array
     let arr = [];
@@ -823,6 +822,7 @@ let arrayRandom = () => {
     return arr;
 }
 
+// 1.YOL normal diziyle yapalım.
 let normalResult = () => {
     let arr = arrayRandom();
     //elemanlar
@@ -844,4 +844,44 @@ let normalResult = () => {
     //bu şarta uyan sayılar
     console.log("bu şarta uyan: " + count + " sayı vardır")
 }
-normalResult()
+//normalResult();
+
+// 2.YOL map,filter, forEach ile yapalım.
+// rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
+// bu sayılardan tek olanları bulalım.          ==> (filter)
+// bu tek sayıların sonuna 5 ekleyelim          ==> (map)
+// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+// 2.YOL map,filter,counter
+
+console.log("*********************************");
+
+let mapFilterForEach=()=>{
+    let count=0;
+    arrayRandom()
+        .filter( (value)=>{return value%2==1; })
+        .map((value)=>{return value+5;})
+        .forEach((value,index)=>{
+            console.log(`VALUE: ${value} index: ${index}`);
+        count++;
+        });
+    console.log(` ${count}`);
+}
+mapFilterForEach()
+
+// 1.ÖDEV
+// ÖDEV  map,filter, forEach ile yapalım.
+// rastgele 10 elemanlı (1<=X<=9) bir dizi  oluşturalım.  ==> (random)
+// bu sayılardan çift olanları bulalım.         ==> (filter)
+// bu çift sayıların sonuna 7 ekleyelim         ==> (map)
+// çıkan sayılardan 3 ile bölülebilenleri       ==> (filter)
+// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+
+// 2.ÖDEV
+// ÖDEV  map,filter, forEach ile yapalım.
+// Türkiye illerinden  10 tanesini bir diziye eklelim . 
+// Bu illerin küçükten büyüğe sıralıyalım (sort)
+// İllerden A ile başlayanların (filter) 
+// her bir karakterini büyük harfle çevirelim (map ==> toUppercase)  ve karakter sayısını belirleyelim.
+// adana ==> ADANA (5)
