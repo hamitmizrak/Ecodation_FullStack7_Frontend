@@ -679,6 +679,19 @@ let functionData4 = () => {
     copyArray.forEach((temp) => {
         console.log(temp)
     });
-
 }
-functionData4() 
+//functionData4() 
+
+
+let functionData5 = () => {
+    let copyArray = cityName();
+
+    //toString() ==> String'e çevirir
+    let str = copyArray.toString();
+    console.log(str.toUpperCase().concat(" .INC"))
+
+    //join() ==> String'e çevirir ancak bizim belirlediğimiz simgeyi ekler
+    let str2 = copyArray.join(" , ");
+    console.log(str2.toUpperCase().concat(" .XYZ"))
+}
+functionData5()
