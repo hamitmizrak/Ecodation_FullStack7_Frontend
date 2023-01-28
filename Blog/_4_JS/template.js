@@ -634,19 +634,31 @@ let functionData3 = () => {
 
     //EKLEME
     console.log("+++++++++++++++++++++++++\n**");
-    arrayData.push("Bitlis");
+    arrayData.push("Bitlis"); //sondan 1 eleman ekler
     arrayData.forEach((temp) => {
         console.log(temp)
     });
 
 
     console.log("+++++++++++++++++++++++++\n**");
-    arrayData.unshift("İzmir");
+    arrayData.unshift("İzmir");//baştan 1 eleman ekler
     arrayData.forEach((temp) => {
         console.log(temp)
     });
 
     //ÇIKARMA
+    console.log("+++++++++++++++++++++++++\n**");
+    arrayData.pop(); //sondan 1 eleman çıkartır
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
+
+    console.log("+++++++++++++++++++++++++\n**");
+    arrayData.shift();//baştan 1 eleman çıkartır
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
+
 
 
 }
