@@ -639,7 +639,6 @@ let functionData3 = () => {
         console.log(temp)
     });
 
-
     console.log("+++++++++++++++++++++++++\n**");
     arrayData.unshift("İzmir");//baştan 1 eleman ekler
     arrayData.forEach((temp) => {
@@ -662,5 +661,4 @@ let functionData3 = () => {
 
 
 }
-
-functionData3()
+//functionData3()
