@@ -662,7 +662,7 @@ let functionData3 = () => {
 //functionData3()
 
 let cityName = () => {
-    return ["Malatya", "Ankara", "Konya", "Sivas","Samsun"];
+    return ["Malatya", "Ankara", "Konya", "Sivas", "Samsun"];
 }
 
 let functionData4 = () => {
@@ -708,7 +708,7 @@ let functionData6 = () => {
     console.log("**************")
 
     cityName().slice(1).forEach((temp) => {
-        console.log(temp.toUpperCase().substring(0,2))
+        console.log(temp.toUpperCase().substring(0, 2))
     });
 }
 //functionData6()
@@ -716,7 +716,7 @@ let functionData6 = () => {
 //console.log("**************")
 
 //splice() : belirlediğimiz yerden itibaren gösterilmesi
-let functionData7= () => {
+let functionData7 = () => {
     let copyArray = cityName();
 
     copyArray.forEach((temp) => {
@@ -726,24 +726,24 @@ let functionData7= () => {
     console.log("**************")
 
     copyArray.splice(1).forEach((temp) => {
-        console.log(temp.toUpperCase().substring(0,2))
+        console.log(temp.toUpperCase().substring(0, 2))
     });
 
     console.log("**************")
 
-     // copyArray.splice(2,1).forEach((temp) => {
+    // copyArray.splice(2,1).forEach((temp) => {
     //     console.log(temp.toUpperCase().substring(0,2))
     // });
     //splice 2,1
     //2:başlama indisi
     //1:silinecek eleman sayısı
-   
+
     console.log("**************")
 }
 //functionData7()
 
 // forEach 
-let functionData8= () => {
+let functionData8 = () => {
     let copyArray = cityName();
 
     copyArray.forEach((value) => {
@@ -751,40 +751,40 @@ let functionData8= () => {
     });
 
     console.log("**************")
-    copyArray.forEach((value,index) => {
-        console.log(value+" "+index)
+    copyArray.forEach((value, index) => {
+        console.log(value + " " + index)
     });
 
     console.log("**************")
-    copyArray.forEach((value,index,arr) => {
-        console.log(value+" "+index+" "+arr)
+    copyArray.forEach((value, index, arr) => {
+        console.log(value + " " + index + " " + arr)
     });
 }
 //functionData8()
 
 // interpolation forEach 
-let functionData9= () => {
+let functionData9 = () => {
     let copyArray = cityName();
 
-    copyArray.forEach((value,index,arr) => {
-        console.log("Value: "+value+" Index:  "+index+" Array "+arr)
+    copyArray.forEach((value, index, arr) => {
+        console.log("Value: " + value + " Index:  " + index + " Array " + arr)
     });
 
     //backtick  ``
-    copyArray.forEach((value,index,arr) => {
+    copyArray.forEach((value, index, arr) => {
         console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     });
 }
 //functionData9()
 
 //filter().forEach() => interpolation(backtick ``)
-let functionData10= () => {
+let functionData10 = () => {
     // filter: return yazıyoruz ki bize değer döndersin
-    cityName().filter((value,index,arr) => {
-          let data=value.startsWith("S");
+    cityName().filter((value, index, arr) => {
+        let data = value.startsWith("S");
         return data;
         //console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
-    }).forEach((value,index,arr) => {
+    }).forEach((value, index, arr) => {
         console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     });
 }
@@ -792,19 +792,54 @@ let functionData10= () => {
 
 
 //map().filter().forEach() => interpolation(backtick ``)
-let functionData11= () => {
+let functionData11 = () => {
     // filter: return yazıyoruz ki bize değer döndersin
-    cityName().map((value,index,arr) => {
+    cityName().map((value, index, arr) => {
         return value.concat("XYZ");
-    }).forEach((value,index,arr) => {
+    }).forEach((value, index, arr) => {
         console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     });
 }
-functionData11()
+//functionData11()
 
-//Örnek 
-// rastgele 10 elemanlı sayı oluşturalım.  ==> (random)
-// bu sayılardan tek olanları bulalım.  ==> (filter)
-// bu tek sayılaraın sonuna 5 ekleyelim   ==> (map)
-// buradaki sayıları ekranda gösterelim. ?   ==> (forEach)
-// bu şarta uyan kaç tane sayı vardır ? ==>   ==> (counter)
+// Örnek 
+// 1.YOL normal diziyle yapalım.
+// 2.YOL map,filter, forEach ile yapalım.
+// rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
+// bu sayılardan tek olanları bulalım.          ==> (filter)
+// bu tek sayılaraın sonuna 5 ekleyelim         ==> (map)
+// buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
+// bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
+
+// 1.YOL normal diziyle yapalım.
+
+let normalResult = () => {
+    //array
+    let arr = [];
+
+    //loop
+    for(let i=0; i<10; i++){
+        arr[i]= Math.floor(Math.random()*9+1) 
+    }
+
+    //elemanlar
+    for( let i=0; i< arr.length; i++){
+        console.log(arr[i]+" ")
+    }
+
+    console.log("**********")
+
+    //bu sayılardan tek olanları bulalım.
+    let count=0;
+    for( let i=0; i< arr.length; i++){
+       if(arr[i]%2==1){
+        let temp=5+arr[i];
+        console.log(arr[i]+" ==> "+temp)
+        count++;
+       }
+    }
+
+    //bu şarta uyan sayılar
+    console.log("bu şarta uyan: "+count+" sayı vardır")
+}
+normalResult()
