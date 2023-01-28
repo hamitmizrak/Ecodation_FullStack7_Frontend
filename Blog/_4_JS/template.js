@@ -586,6 +586,7 @@ let arrayData = () => {
 }
 //arrayData()
 
+
 //Döngüler
 let functionData2 = () => {
 
@@ -657,8 +658,27 @@ let functionData3 = () => {
     arrayData.forEach((temp) => {
         console.log(temp)
     });
-
-
-
 }
 //functionData3()
+
+let cityName = () => {
+    return ["Malatya", "Ankara", "Konya", "Sivas"];
+}
+
+let functionData4 = () => {
+    let copyArray = cityName();
+    //sort :Küçükten büyüğe sıralamak
+    copyArray.sort();
+    copyArray.forEach((temp) => {
+        console.log(temp)
+    });
+
+    console.log("*******************")
+    //sort : büyükten küçüğe sıralamak
+    copyArray.sort().reverse();
+    copyArray.forEach((temp) => {
+        console.log(temp)
+    });
+
+}
+functionData4() 
