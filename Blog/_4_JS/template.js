@@ -707,8 +707,37 @@ let functionData6 = () => {
 
     console.log("**************")
 
-    copyArray.slice(1).forEach((temp) => {
+    cityName().slice(1).forEach((temp) => {
         console.log(temp.toUpperCase().substring(0,2))
     });
 }
 functionData6()
+
+console.log("**************")
+
+//splice() : belirlediğimiz yerden itibaren gösterilmesi
+let functionData7= () => {
+    let copyArray = cityName();
+
+    copyArray.forEach((temp) => {
+        console.log(temp)
+    });
+
+    console.log("**************")
+
+    copyArray.splice(1).forEach((temp) => {
+        console.log(temp.toUpperCase().substring(0,2))
+    });
+
+    console.log("**************")
+
+     // copyArray.splice(2,1).forEach((temp) => {
+    //     console.log(temp.toUpperCase().substring(0,2))
+    // });
+    //splice 2,1
+    //2:başlama indisi
+    //1:silinecek eleman sayısı
+   
+    console.log("**************")
+}
+functionData7()
