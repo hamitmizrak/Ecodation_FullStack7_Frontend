@@ -662,7 +662,7 @@ let functionData3 = () => {
 //functionData3()
 
 let cityName = () => {
-    return ["Malatya", "Ankara", "Konya", "Sivas"];
+    return ["Malatya", "Ankara", "Konya", "Sivas","Samsun"];
 }
 
 let functionData4 = () => {
@@ -775,4 +775,17 @@ let functionData9= () => {
         console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
     });
 }
-functionData9()
+//functionData9()
+
+//filter interpolation
+//filter().forEach()
+let functionData10= () => {
+    //backtick  ``
+    cityName().filter((value,index,arr) => {
+          return value.startsWith("S")
+        //console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
+    }).forEach((value,index,arr) => {
+        console.log(`Değer: ${value} Sırası: ${index} Dizisi: ${arr}`)
+    });
+}
+functionData10()
