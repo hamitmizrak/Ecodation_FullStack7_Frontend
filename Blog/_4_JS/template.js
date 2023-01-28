@@ -601,7 +601,7 @@ let functionData2 = () => {
 
     //2-) for in:eleman sırasına erişmek 
     for (let temp in arrayData) {
-        console.log(temp+" ==> "+arrayData[temp])
+        console.log(temp + " ==> " + arrayData[temp])
     }
 
     console.log("+++++++++++++++++++++++++\n*forOf*");
@@ -613,9 +613,42 @@ let functionData2 = () => {
 
     console.log("+++++++++++++++++++++++++\n*forEach*");
     //4-) ForEach 
-    arrayData.forEach(function(temp){
+    arrayData.forEach(function (temp) {
         console.log(temp)
     });
 
+    console.log("+++++++++++++++++++++++++\n*forEach*");
+    //5-) ForEach 
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
 }
-functionData2()
+//functionData2()
+
+let functionData3 = () => {
+    let arrayData = ["Malatya", "Ankara", "Konya", "Sivas"];
+
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
+
+    //EKLEME
+    console.log("+++++++++++++++++++++++++\n**");
+    arrayData.push("Bitlis");
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
+
+
+    console.log("+++++++++++++++++++++++++\n**");
+    arrayData.unshift("İzmir");
+    arrayData.forEach((temp) => {
+        console.log(temp)
+    });
+
+    //ÇIKARMA
+
+
+}
+
+functionData3()
