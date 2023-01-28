@@ -807,39 +807,41 @@ let functionData11 = () => {
 // 2.YOL map,filter, forEach ile yapalım.
 // rastgele 10 elemanlı bir dizi  oluşturalım.  ==> (random)
 // bu sayılardan tek olanları bulalım.          ==> (filter)
-// bu tek sayılaraın sonuna 5 ekleyelim         ==> (map)
+// bu tek sayıların sonuna 5 ekleyelim          ==> (map)
 // buradaki sayıları ekranda gösterelim. ?      ==> (forEach)
 // bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
 
 // 1.YOL normal diziyle yapalım.
 
-let normalResult = () => {
+let arrayRandom = () => {
     //array
     let arr = [];
-
     //loop
-    for(let i=0; i<10; i++){
-        arr[i]= Math.floor(Math.random()*9+1) 
+    for (let i = 0; i < 10; i++) {
+        arr[i] = Math.floor(Math.random() * 9 + 1)
     }
+    return arr;
+}
 
+let normalResult = () => {
+    let arr = arrayRandom();
     //elemanlar
-    for( let i=0; i< arr.length; i++){
-        console.log(arr[i]+" ")
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i] + " ")
     }
-
     console.log("**********")
 
     //bu sayılardan tek olanları bulalım.
-    let count=0;
-    for( let i=0; i< arr.length; i++){
-       if(arr[i]%2==1){
-        let temp=5+arr[i];
-        console.log(arr[i]+" ==> "+temp)
-        count++;
-       }
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 1) {
+            let temp = 5 + arr[i];
+            console.log(arr[i] + " ==> " + temp)
+            count++;
+        }
     }
 
     //bu şarta uyan sayılar
-    console.log("bu şarta uyan: "+count+" sayı vardır")
+    console.log("bu şarta uyan: " + count + " sayı vardır")
 }
 normalResult()
