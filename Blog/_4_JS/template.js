@@ -892,6 +892,9 @@ let mapFilterForEach = () => {
 // her bir karakterini büyük harfle çevirelim (map ==> toUppercase)  ve karakter sayısını belirleyelim.
 // adana ==> ADANA (5)
 
+function deneme(){};
+let deneme2=function (){};
+let deneme3= ()=>{};
 
 //console.log("*********************************");
 let objectTuturials=()=>{
@@ -900,6 +903,10 @@ let objectTuturials=()=>{
     "time":10,
     "otherTech":["Servlet","Jsp","Jsf","SFramework"],
     "isHightLanguageLevel":true,
+    "javase":function(){ //Anonymous ,arrow
+        //this => objede işaretleme yapar(KEY).
+        return `merhabalar +${language.nameLanguage} ${this.nameLanguage}`;
+    }
   };  
   console.log(language);
   console.log(language.nameLanguage);
@@ -908,6 +915,12 @@ let objectTuturials=()=>{
   console.log(language.isHightLanguageLevel);
   console.log(language.otherTech);
   console.log(language.otherTech[0]);
+  console.log(language.javase());
+
+  //object literal :sonrada özellik eklemektir.
+  language.javaee="Servlet";
+  console.log(language.javaee);
+  
 }
 objectTuturials();
 
