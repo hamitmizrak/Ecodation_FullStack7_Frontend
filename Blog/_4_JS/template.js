@@ -901,7 +901,9 @@ let objectTuturials=()=>{
     "otherTech":["Servlet","Jsp","Jsf","SFramework"],
     "isHightLanguageLevel":true,
   };  
+  console.log(language);
   console.log(language.nameLanguage);
+  console.log(`ADI: ${language.nameLanguage}`);
   console.log(language.time);
   console.log(language.isHightLanguageLevel);
   console.log(language.otherTech);
