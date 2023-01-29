@@ -901,14 +901,20 @@ let objectTuturials=()=>{
   let language={
     "nameLanguage":"Java",
     "time":10,
-    "otherTech":["Servlet","Jsp","Jsf","SFramework"],
     "isHightLanguageLevel":true,
+    "otherTech":["Servlet","Jsp","Jsf","SFramework"],
     "javase":function(){ //Anonymous ,arrow
         //this => objede işaretleme yapar(KEY).
         return `merhabalar +${language.nameLanguage} ${this.nameLanguage}`;
+    },
+    "javaee":{
+        "name":"JSTL",
+        "year":7,
+        "JPA":["Hibernate","ObjectDB"]
     }
   };  
   console.log(language);
+  console.log(typeof language.nameLanguage);
   console.log(language.nameLanguage);
   console.log(`ADI: ${language.nameLanguage}`);
   console.log(language.time);
@@ -916,10 +922,13 @@ let objectTuturials=()=>{
   console.log(language.otherTech);
   console.log(language.otherTech[0]);
   console.log(language.javase());
+  console.log(language.javaee.name);
+  console.log(language.javaee.JPA);
+  console.log(language.javaee.JPA[0]);
 
   //object literal :sonrada özellik eklemektir.
-  language.javaee="Servlet";
-  console.log(language.javaee);
+  language.javame="Servlet";
+  console.log(language.javame);
   
 }
 objectTuturials();
