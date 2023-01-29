@@ -1001,14 +1001,46 @@ String.prototype.repeat44=function(k){
     return new Array(k+1).join(" "+this);
 }
 
-console.log("java".repeat44(5));
+//console.log("java".repeat44(5));
 
 // ÖRNEK-1
 // String'e mySpecialPow adında bir built-in-constructor oluşturalım
 // kullanıcınının vereceği sayıyı üssünü alsın
 // 4^2=16
 
-// ÖRNEK-2
+String.prototype.mySpecialPow=function(data){
+    return Math.pow(data,2);
+}
+//console.log("".mySpecialPow(Number(prompt("Lütfen sayı giriniz"))));
+
+// ÖDEV
 // String'e yeni bir özellik ekliyoruz.
 // Kullanıcının verdiği kelimenin ilk 2 karakteri büyük yazalım.
+
+///////////////////////////////////////////////////////////////
+
+//JS Senkton ancak biz Asenkron bir yapı bize gerekli ise; ne yapmamız gerekiyor.
+
+// SetInterval 
+
+let setIntervalFunction=()=>{
+    setInterval(function(){
+        console.log("setIntervalFunction")
+    },4000);
+}
+setIntervalFunction()
+
+let normalFunction = function(){
+    console.log("normalFunction")
+}
+normalFunction()
+
+
+
+
+// CallBackFunction 
+// Promise 
+// Async Await
+
+
 
