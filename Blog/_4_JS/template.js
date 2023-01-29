@@ -892,52 +892,106 @@ let mapFilterForEach = () => {
 // her bir karakterini büyük harfle çevirelim (map ==> toUppercase)  ve karakter sayısını belirleyelim.
 // adana ==> ADANA (5)
 
-function deneme(){};
-let deneme2=function (){};
-let deneme3= ()=>{};
+// function deneme(){};
+// let deneme2=function (){};
+// let deneme3= ()=>{};
 
 //console.log("*********************************");
-let objectTuturials=()=>{
-  let language={
-    "nameLanguage":"Java",
-    "time":10,
-    "isHightLanguageLevel":true,
-    "otherTech":["Servlet","Jsp","Jsf","SFramework"],
-    "javase":function(){ //Anonymous ,arrow
-        //this => objede işaretleme yapar(KEY).
-        return `merhabalar +${language.nameLanguage} ${this.nameLanguage}`;
-    },
-    javaee:{
-        "name":"JSTL",
-        "year":7,
-        "JPA":["Hibernate","ObjectDB"]
+let objectTuturials = () => {
+
+    //Object
+    let language = {
+        "nameLanguage": "Java",
+        "time": 10,
+        "isHightLanguageLevel": true,
+        "otherTech": ["Servlet", "Jsp", "Jsf", "SFramework"],
+        "javase": function () { //Anonymous ,arrow
+            //this => objede işaretleme yapar(KEY).
+            return `merhabalar +${language.nameLanguage} ${this.nameLanguage}`;
+        },
+        javaee: {
+            "name": "JSTL",
+            "year": 7,
+            "JPA": ["Hibernate", "ObjectDB"]
+        }
+    };
+    console.log(language);
+    console.log(typeof language.nameLanguage);
+    console.log(language.nameLanguage);
+    console.log(`ADI: ${language.nameLanguage}`);
+    console.log(language.time);
+    console.log(language.isHightLanguageLevel);
+    console.log(language.otherTech);
+    console.log(language.otherTech[0]);
+    console.log(language.javase());
+    console.log(language.javaee.name);
+    console.log(language.javaee.JPA);
+    console.log(language.javaee.JPA[0]);
+
+    //object literal :sonrada özellik eklemektir.
+    language.javame = "Servlet";
+    console.log(language.javame);
+
+    document.writeln(` ${language[0]} <br/>`)
+    document.writeln(` ${language["nameLanguage"]} <br/>`)
+
+    //for in
+    for (let temp in language) {
+        document.writeln(`${temp} ==> ${language[temp]} ,`)
+        console.log(`${temp} ==> ${language["javaee"]["name"]} ,`)
     }
-  };  
-  console.log(language);
-  console.log(typeof language.nameLanguage);
-  console.log(language.nameLanguage);
-  console.log(`ADI: ${language.nameLanguage}`);
-  console.log(language.time);
-  console.log(language.isHightLanguageLevel);
-  console.log(language.otherTech);
-  console.log(language.otherTech[0]);
-  console.log(language.javase());
-  console.log(language.javaee.name);
-  console.log(language.javaee.JPA);
-  console.log(language.javaee.JPA[0]);
-
-  //object literal :sonrada özellik eklemektir.
-  language.javame="Servlet";
-  console.log(language.javame);
-
-  document.writeln(` ${language[0]} <br/>`)
-  document.writeln(` ${language["nameLanguage"]} <br/>`)
-  
-  //for in
-  for (let temp in language){
-    document.writeln(`${temp} ==> ${language[temp]} ,`)
-  }
-  
+console.log(language.javaee.JPA);
 }
-objectTuturials();
+//objectTuturials();
 
+/////////////////////////////////////////////////////////////
+//forbidden: name,        password
+//           studentName, passwd
+let constuctorFunction = () => {
+    //constructor
+     function constuctorData (adi, soyadi,javaRelaseDate) {
+        this.adi = adi;
+        this.soyadi = soyadi;
+        this.javaRelaseDate=javaRelaseDate;
+        console.log(this);
+        this.javaDate=function(){
+            return new Date().getFullYear()-this.javaRelaseDate;
+        }
+
+    }   
+
+    let result = new constuctorData("Hamit", "Mızrak",1991)
+    console.log(result.adi);
+    console.log(result.soyadi);
+    console.log(result.javaDate());
+}
+//constuctorFunction();
+
+//Araştırma TypeScript nedir ? EcmaScript nedir ?
+//Aralardaki farklar nedir ?
+
+///////////////////////////////////////////////////////////////
+// console.log();
+let jsonFunction = () => {
+
+     //object
+    let person = {
+        "name": "Java",
+        "surname": 10
+    }; 
+//object  ==> JSON çevirmek (jackson)
+//obje ==> String
+
+
+// Object ==> String'e çevirmek
+let objectToString= JSON.stringify(person);
+console.log(objectToString);
+
+//String ==> Object çevirmek
+let stringToParse=JSON.parse(objectToString);
+console.log(stringToParse);
+console.log(stringToParse.name);
+
+
+}
+jsonFunction();
