@@ -930,6 +930,9 @@ let objectTuturials=()=>{
   language.javame="Servlet";
   console.log(language.javame);
 
+  document.writeln(` ${language[0]} <br/>`)
+  document.writeln(` ${language["nameLanguage"]} <br/>`)
+  
   //for in
   for (let temp in language){
     document.writeln(`${temp} ==> ${language[temp]} ,`)
