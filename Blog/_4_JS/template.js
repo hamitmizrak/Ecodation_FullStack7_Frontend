@@ -993,4 +993,22 @@ let stringToParse=JSON.parse(objectToString.toUpperCase());
 console.log(stringToParse);
 console.log(stringToParse.NAME);
 }
-jsonFunction();
+//jsonFunction();
+
+///////////////////////////////////////////////////////////////
+// Prototype: ek özellikler eklemek
+String.prototype.repeat44=function(k){
+    return new Array(k+1).join(" "+this);
+}
+
+console.log("java".repeat44(5));
+
+// ÖRNEK-1
+// String'e mySpecialPow adında bir built-in-constructor oluşturalım
+// kullanıcınının vereceği sayıyı üssünü alsın
+// 4^2=16
+
+// ÖRNEK-2
+// String'e yeni bir özellik ekliyoruz.
+// Kullanıcının verdiği kelimenin ilk 2 karakteri büyük yazalım.
+
