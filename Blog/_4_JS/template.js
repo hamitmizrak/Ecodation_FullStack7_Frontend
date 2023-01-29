@@ -1063,8 +1063,23 @@ function ucuncu(callbackfnc) {
 // String.prototype.mySpecialUsernamePasswordHidden => 
 
 /////////////////////////////////////////////////////////////////
+
+// ÖDEV: rest parameter nedir ?  ==> ... 
+
+// ÖDEV: 
+// CallBackFunction
 // Promise
 // Async Await
+// ajax nedir ?
+
+/////////////////////////////////////////////////////////////////
+//  CallBackFunction Promise Async Await
+//  rest parameter 
+//  DOM (html-css-js)
+//  Event
+//  jQuery  
+//  Template (HTML5-Css3-Js-jQuery-Bootstrap-Responsive Design)
+
 
 
 
