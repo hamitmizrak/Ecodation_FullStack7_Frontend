@@ -979,19 +979,18 @@ let jsonFunction = () => {
         "name": "Java",
         "surname": 10
     }; 
+    console.log(person);
 //object  ==> JSON çevirmek (jackson)
 //obje ==> String
 
 
 // Object ==> String'e çevirmek
 let objectToString= JSON.stringify(person);
-console.log(objectToString);
+console.log(objectToString.toUpperCase());
 
 //String ==> Object çevirmek
-let stringToParse=JSON.parse(objectToString);
+let stringToParse=JSON.parse(objectToString.toUpperCase());
 console.log(stringToParse);
-console.log(stringToParse.name);
-
-
+console.log(stringToParse.NAME);
 }
 jsonFunction();
