@@ -907,7 +907,7 @@ let objectTuturials=()=>{
         //this => objede işaretleme yapar(KEY).
         return `merhabalar +${language.nameLanguage} ${this.nameLanguage}`;
     },
-    "javaee":{
+    javaee:{
         "name":"JSTL",
         "year":7,
         "JPA":["Hibernate","ObjectDB"]
@@ -929,6 +929,11 @@ let objectTuturials=()=>{
   //object literal :sonrada özellik eklemektir.
   language.javame="Servlet";
   console.log(language.javame);
+
+  //for in
+  for (let temp in language){
+    document.writeln(`${temp} ==> ${language[temp]} ,`)
+  }
   
 }
 objectTuturials();
