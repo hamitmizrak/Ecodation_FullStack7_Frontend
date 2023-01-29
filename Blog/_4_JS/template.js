@@ -1076,7 +1076,7 @@ function ucuncu(callbackfnc) {
 //  CallBackFunction Promise Async Await
 //  rest parameter 
 //  DOM (html-css-js)
-//  Event
+//  Event 
 //  jQuery  
 //  Template (HTML5-Css3-Js-jQuery-Bootstrap-Responsive Design)
 
