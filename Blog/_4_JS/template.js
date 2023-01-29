@@ -940,7 +940,7 @@ let objectTuturials = () => {
         document.writeln(`${temp} ==> ${language[temp]} ,`)
         console.log(`${temp} ==> ${language["javaee"]["name"]} ,`)
     }
-console.log(language.javaee.JPA);
+    console.log(language.javaee.JPA);
 }
 //objectTuturials();
 
@@ -949,18 +949,18 @@ console.log(language.javaee.JPA);
 //           studentName, passwd
 let constuctorFunction = () => {
     //constructor
-     function constuctorData (adi, soyadi,javaRelaseDate) {
+    function constuctorData(adi, soyadi, javaRelaseDate) {
         this.adi = adi;
         this.soyadi = soyadi;
-        this.javaRelaseDate=javaRelaseDate;
+        this.javaRelaseDate = javaRelaseDate;
         console.log(this);
-        this.javaDate=function(){
-            return new Date().getFullYear()-this.javaRelaseDate;
+        this.javaDate = function () {
+            return new Date().getFullYear() - this.javaRelaseDate;
         }
 
-    }   
+    }
 
-    let result = new constuctorData("Hamit", "Mızrak",1991)
+    let result = new constuctorData("Hamit", "Mızrak", 1991)
     console.log(result.adi);
     console.log(result.soyadi);
     console.log(result.javaDate());
@@ -974,31 +974,31 @@ let constuctorFunction = () => {
 // console.log();
 let jsonFunction = () => {
 
-     //object
+    //object
     let person = {
         "name": "Java",
         "surname": 10
-    }; 
+    };
     console.log(person);
-//object  ==> JSON çevirmek (jackson)
-//obje ==> String
+    //object  ==> JSON çevirmek (jackson)
+    //obje ==> String
 
 
-// Object ==> String'e çevirmek
-let objectToString= JSON.stringify(person);
-console.log(objectToString.toUpperCase());
+    // Object ==> String'e çevirmek
+    let objectToString = JSON.stringify(person);
+    console.log(objectToString.toUpperCase());
 
-//String ==> Object çevirmek
-let stringToParse=JSON.parse(objectToString.toUpperCase());
-console.log(stringToParse);
-console.log(stringToParse.NAME);
+    //String ==> Object çevirmek
+    let stringToParse = JSON.parse(objectToString.toUpperCase());
+    console.log(stringToParse);
+    console.log(stringToParse.NAME);
 }
 //jsonFunction();
 
 ///////////////////////////////////////////////////////////////
 // Prototype: ek özellikler eklemek
-String.prototype.repeat44=function(k){
-    return new Array(k+1).join(" "+this);
+String.prototype.repeat44 = function (k) {
+    return new Array(k + 1).join(" " + this);
 }
 
 //console.log("java".repeat44(5));
@@ -1008,8 +1008,8 @@ String.prototype.repeat44=function(k){
 // kullanıcınının vereceği sayıyı üssünü alsın
 // 4^2=16
 
-String.prototype.mySpecialPow=function(data){
-    return Math.pow(data,2);
+String.prototype.mySpecialPow = function (data) {
+    return Math.pow(data, 2);
 }
 //console.log("".mySpecialPow(Number(prompt("Lütfen sayı giriniz"))));
 
@@ -1023,23 +1023,47 @@ String.prototype.mySpecialPow=function(data){
 
 // SetInterval 
 
-let setIntervalFunction=()=>{
-    setInterval(function(){
+let setIntervalFunction = () => {
+    setInterval(function () {
         console.log("setIntervalFunction")
-    },4000);
+    }, 4000);
 }
-setIntervalFunction()
+//setIntervalFunction();
 
-let normalFunction = function(){
+let normalFunction = function () {
     console.log("normalFunction")
 }
-normalFunction()
+//normalFunction()
+////////////////////////////////////////////////////////////////////
 
+// CallBackFunction -1 
+function birinci(data) {
+    console.log(Math.sqrt(data));
+    return Math.sqrt(data);
+}
 
+function ikinci() {
+    let userData = Number(prompt("Bir sayı giriniz"));
+    birinci(userData);
+}
+//ikinci();
 
+// CallBackFunction -2 
+function ucuncu(callbackfnc) {
+    callbackfnc(userData);
+}
+//ucuncu(birinci(Number(prompt("Bir sayı giriniz"))));
 
-// CallBackFunction 
-// Promise 
+// ÖDEV: 
+// Kullanıcıdan aldığımız isim ve soyismin sadece ilk harflerini büyük harfle
+// gösterip geri kalan harfler maskelesin (****)
+// örneğin: hamit mızrak ==> H**** M*****
+// bunu yapan callbackfunction yazalım. ?
+// for döngüsü, Dizileri, charAt, replace , toUpperCase()
+// String.prototype.mySpecialUsernamePasswordHidden => 
+
+/////////////////////////////////////////////////////////////////
+// Promise
 // Async Await
 
 
