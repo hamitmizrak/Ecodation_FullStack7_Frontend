@@ -854,7 +854,7 @@ let normalResult = () => {
 // bu şarta uyan kaç tane sayı vardır ?         ==> (counter)
 // 2.YOL map,filter,counter
 
-console.log("*********************************");
+//console.log("*********************************");
 
 let mapFilterForEach = () => {
     let count = 0;
@@ -873,7 +873,7 @@ let mapFilterForEach = () => {
         });
     console.log(` ${count}`);
 }
-mapFilterForEach()
+//mapFilterForEach()
 
 // 1.ÖDEV
 // ÖDEV  map,filter, forEach ile yapalım.
@@ -891,3 +891,21 @@ mapFilterForEach()
 // İllerden A ile başlayanların (filter)
 // her bir karakterini büyük harfle çevirelim (map ==> toUppercase)  ve karakter sayısını belirleyelim.
 // adana ==> ADANA (5)
+
+
+//console.log("*********************************");
+let objectTuturials=()=>{
+  let language={
+    "nameLanguage":"Java",
+    "time":10,
+    "otherTech":["Servlet","Jsp","Jsf","SFramework"],
+    "isHightLanguageLevel":true,
+  };  
+  console.log(language.nameLanguage);
+  console.log(language.time);
+  console.log(language.isHightLanguageLevel);
+  console.log(language.otherTech);
+  console.log(language.otherTech[0]);
+}
+objectTuturials();
+
