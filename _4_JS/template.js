@@ -1124,7 +1124,7 @@ function ikinci(callbackfnc) {
 //const promise1=new Promise(()=>{});
 
 //step 3
-// const promise1=new Promise((resolve,reject)=>{
+// let promise1=new Promise((resolve,reject)=>{
 
 // });
 
@@ -1136,13 +1136,36 @@ function ikinci(callbackfnc) {
 
 
 //step 5
-let promise1 = new Promise((resolve, reject) => {
+// let promise1 = new Promise((resolve, reject) => {
+//     resolve("Merhabalar");
+//     //reject("intenter yoktur")
+// });
+
+// //console.log(promise1)
+// promise1.then().catch();
+
+
+//step 6
+// let promise1=new Promise((resolve,reject)=>{
+// resolve("Merhabalar");
+// })
+// promise1.then(value=>{
+//         console.log(value)
+// }).catch();
+
+//step 7
+var promise1 = new Promise((resolve, reject) => {
     resolve("Merhabalar");
-    //reject("intenter yoktur")
+    reject("intenter yoktur")
 });
 
-//console.log(promise1)
-promise1.then().catch();
+promise1.then(temp => {
+    console.log("Her şey tamamdır")
+}).catch((error) => {
+    console.log("bağlantı hatası: " + error)
+});
+
+
 
 //////////////////////////////////////////////////////////////
 //  rest parameter
