@@ -1106,7 +1106,14 @@ function ikinci(callbackfnc) {
 }
 ikinci(birinci);
 
+//////////////////////////////////////////////////////////////
 
+//  normalFunction ,CallBackFunction, Promise, Async-Await
+//callbackfunction
+
+//promise: bana söz ver.
+
+//////////////////////////////////////////////////////////////
 //  rest parameter 
 //  DOM (html-css-js)
 //  Event 
