@@ -1154,15 +1154,30 @@ function ikinci(callbackfnc) {
 // }).catch();
 
 //step 7
-var promise1 = new Promise((resolve, reject) => {
+// var promise1 = new Promise((resolve, reject) => {
+//     resolve("Merhabalar");
+//     reject("intenter yoktur")
+// });
+
+// promise1.then(temp => {
+//     console.log("Her şey tamamdır")
+// }).catch((error) => {
+//     console.log("bağlantı hatası: " + error)
+// });
+
+
+//step 8
+let promise1 = new Promise((resolve, reject) => {
     resolve("Merhabalar");
     reject("intenter yoktur")
 });
 
 promise1.then(temp => {
-    console.log("Her şey tamamdır")
+    console.log("1.aşama")
+}).then(temp => {
+    console.log("2.aşama")
 }).catch((error) => {
-    console.log("bağlantı hatası: " + error)
+    console.log("bağlantı hatası: " + error);
 });
 
 
