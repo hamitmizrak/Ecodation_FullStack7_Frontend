@@ -1202,19 +1202,37 @@ promise1.then(temp => {
 
 ///////////////////////////////////////////////////////////////
 //  Event
-function topla(){
-    console.log(4+5);
-}
+// function topla(){
+//     console.log(4+5);
+// }
 
 ///////////////////////////////////////////////////////////////
 //  rest parameter: dizilerdeki parametreler
-let arr=(x,y,...dizi)=>{
-console.log("x,y,z => "+(x)+" "+(y)+" "+(dizi[0]+dizi[1]+dizi[2]));
-}
-arr(1,2,3,4,5,6,7,8,9);
+// let arr=(x,y,...dizi)=>{
+// console.log("x,y,z => "+(x)+" "+(y)+" "+(dizi[0]+dizi[1]+dizi[2]));
+// }
+// arr(1,2,3,4,5,6,7,8,9);
 
 ///////////////////////////////////////////////////////////////
 //  DOM (html-css-js)
+let showingDom=()=>{
+    //console.log("data");
+    //ID
+    //window.document.getElementById("parag_id").innerHTML="Değiştirdim";
+
+    //dom Html
+    //document.getElementById("parag_id").innerHTML="<b><mark>Değiştirdim</mark></b>";
+
+    //dom Text
+    //document.getElementById("parag_id").innerText="<b><mark>Değiştirdim</mark></b>";
+
+    //CLASS
+    document.getElementsByClassName("parag_class")[0].innerText="<b><mark>Değiştirdim</mark></b>";
+
+}
+
+
+///////////////////////////////////////////////////////////////
 //  jQuery
 //  Template (HTML5-Css3-Js-jQuery-Bootstrap-Responsive Design)
 
