@@ -1104,7 +1104,7 @@ function birinci(data) {
 function ikinci(callbackfnc) {
     callbackfnc(Number(prompt("Bir sayı giriniz")));
 }
-ikinci(birinci);
+//ikinci(birinci);
 
 //////////////////////////////////////////////////////////////
 
@@ -1112,6 +1112,22 @@ ikinci(birinci);
 //callbackfunction
 
 //promise: bana söz ver.
+//callback function için alternative bir yoldur.
+// pending :bekleme
+// resolved: başarılı
+// rejected: başarısız
+
+//step 1 
+//const promise1=new Promise();
+
+//step 2
+//const promise1=new Promise(()=>{});
+
+//step 3
+const promise1=new Promise((resolve,reject)=>{
+
+});
+console.log(promise1)
 
 //////////////////////////////////////////////////////////////
 //  rest parameter 
