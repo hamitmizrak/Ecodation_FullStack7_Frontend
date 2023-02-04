@@ -1182,22 +1182,22 @@ function ikinci(callbackfnc) {
 
 
 //step 9
-let promise1 = new Promise((resolve, reject) => {
-    try {
-        resolve(Merhabalar);
-    } catch (err) {
-        reject("internet yoktur")
-    }
-});
+// let promise1 = new Promise((resolve, reject) => {
+//     try {
+//         resolve(Merhabalar);
+//     } catch (err) {
+//         reject("internet yoktur")
+//     }
+// });
 
-promise1.then(temp => {
-    console.log("1.aşama")
-}).then(temp => {
-    console.log("2.aşama")
-}).catch((error) => {
-    console.log("bağlantı hatası: " + error);
-    console.log("bağlantı hatası: " + error.message);
-});
+// promise1.then(temp => {
+//     console.log("1.aşama")
+// }).then(temp => {
+//     console.log("2.aşama")
+// }).catch((error) => {
+//     console.log("bağlantı hatası: " + error);
+//     console.log("bağlantı hatası: " + error.message);
+// });
 
 
 ///////////////////////////////////////////////////////////////
@@ -1245,10 +1245,11 @@ let showingDom=()=>{
 let formResult=()=>{
     let myEmail=document.getElementById("emailData").value;
     let myPasswordData=document.getElementById("passwordData").value;
+    console.log(myEmail+" "+myPasswordData);
     console.log(`Email: ${myEmail} Password: ${myPasswordData}` )
+    alert(myEmail+" "+myPasswordData);
 }
 
-formResult()
 
 ///////////////////////////////////////////////////////////////
 //  jQuery
