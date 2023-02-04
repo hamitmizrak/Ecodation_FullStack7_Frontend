@@ -1102,9 +1102,9 @@ function birinci(data) {
 }
 
 function ikinci(callbackfnc) {
-    callbackfnc(userData);
+    callbackfnc(Number(prompt("Bir sayı giriniz")));
 }
-ikinci(birinci(Number(prompt("Bir sayı giriniz"))));
+ikinci(birinci);
 
 
 //  rest parameter 
