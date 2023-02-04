@@ -1097,8 +1097,8 @@
 //data^2
 
 function birinci(data) {
-    console.log(Math.pow(data,2));
-    return Math.pow(data,2);
+    console.log(Math.pow(data, 2));
+    return Math.pow(data, 2);
 }
 
 function ikinci(callbackfnc) {
@@ -1124,16 +1124,31 @@ function ikinci(callbackfnc) {
 //const promise1=new Promise(()=>{});
 
 //step 3
-const promise1=new Promise((resolve,reject)=>{
+// const promise1=new Promise((resolve,reject)=>{
 
+// });
+
+
+//step 4 
+// let promise1=new Promise((resolve,reject)=>{
+// resolve()
+// });
+
+
+//step 5
+let promise1 = new Promise((resolve, reject) => {
+    resolve("Merhabalar");
+    //reject("intenter yoktur")
 });
-console.log(promise1)
+
+//console.log(promise1)
+promise1.then().catch();
 
 //////////////////////////////////////////////////////////////
-//  rest parameter 
+//  rest parameter
 //  DOM (html-css-js)
-//  Event 
-//  jQuery  
+//  Event
+//  jQuery
 //  Template (HTML5-Css3-Js-jQuery-Bootstrap-Responsive Design)
 
 
