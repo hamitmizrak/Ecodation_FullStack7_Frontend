@@ -1216,7 +1216,6 @@ promise1.then(temp => {
 ///////////////////////////////////////////////////////////////
 //  DOM (html-css-js)
 let showingDom=()=>{
-   
     //console.log("data");
     //HTML TEXT
     //ID
@@ -1243,6 +1242,13 @@ let showingDom=()=>{
    data.style.marginTop="15px";
 }
 
+let formResult=()=>{
+    let myEmail=document.getElementById("emailData").value;
+    let myPasswordData=document.getElementById("passwordData").value;
+    console.log(`Email: ${myEmail} Password: ${myPasswordData}` )
+}
+
+formResult()
 
 ///////////////////////////////////////////////////////////////
 //  jQuery

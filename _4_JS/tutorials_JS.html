@@ -18,7 +18,7 @@
 
  
 
-    <button class="btn btn-primary" onClick="topla()">onClick</button>
+    <!-- <button class="btn btn-primary" onClick="topla()">onClick</button>
     <button class="btn btn-secondary" ondblClick="topla()">ondblClick</button> <br/><br/>
     
     <button class="btn btn-danger" onkeydown="topla()">onkeydown</button>
@@ -32,8 +32,41 @@
 
     <hr><hr>
 
-    <p id="parag_id" class="parag_class" onClick="showingDom()">Merhabalar</p>
+    <p id="parag_id" class="parag_class" onClick="showingDom()">Merhabalar</p> -->
 
+    <h1 class="text-center display-2 text-uppercase mt-5">Login</h1>
+   
+             <form action="#!" method="get">
+
+                <div class="container">
+                    <div class="row">
+                <!-- email -->
+                <div class="form-group">
+                    <div class="col-md-2"><i class="fa-solid fa-envelope"></i></div>
+                <div class="col-md-10">
+                    <input type="email" id="emailData" name="emailData" class="form-control" placeholder="emailiniz" required autofocus="true" />
+                </div>
+                </div>
+
+                <!-- password -->
+                <div class="form-group">
+                    <div class="col-2"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                    <div class="col">
+                        <input type="password"  id="passwordData" name="passwordData"  class="form-control" placeholder="şifreniz" required />
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <div class="col-2"></div>
+                    <div class="col">
+                       <button type="reset" class="btn btn-danger">Temizle</button>
+                       <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                </div>
+                  </div>
+               </div> 
+            </form>
+  
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
     </script>
@@ -66,7 +99,6 @@
         // Hyphen       -
         // camelCaseValue   
         // PascalCaseValue
-    
         </script>
 
         <script src="template.js"></script>
