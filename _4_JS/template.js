@@ -1215,7 +1215,7 @@ function ikinci(callbackfnc) {
 
 ///////////////////////////////////////////////////////////////
 //  DOM (html-css-js)
-let showingDom=()=>{
+let showingDom = () => {
     //console.log("data");
     //HTML TEXT
     //ID
@@ -1231,28 +1231,59 @@ let showingDom=()=>{
     //document.getElementsByClassName("parag_class")[0].innerText="<b><mark>Değiştirdim</mark></b>";
 
     // CSS 
-   let data=document.getElementById("parag_id");
+    let data = document.getElementById("parag_id");
 
-   data.innerHTML="<b> Html datası</b>"; //Html
-  
-   data.style.fontSize="35px";
-   data.style.color="white";
-   data.style.backgroundColor="black";
-   data.style.padding="15px";
-   data.style.marginTop="15px";
+    data.innerHTML = "<b> Html datası</b>"; //Html
+
+    data.style.fontSize = "35px";
+    data.style.color = "white";
+    data.style.backgroundColor = "black";
+    data.style.padding = "15px";
+    data.style.marginTop = "15px";
 }
 
-let formResult=()=>{
-    let myEmail=document.getElementById("emailData").value;
-    let myPasswordData=document.getElementById("passwordData").value;
-    console.log(myEmail+" "+myPasswordData);
-    console.log(`Email: ${myEmail} Password: ${myPasswordData}` )
-    alert(myEmail+" "+myPasswordData);
+let formResult = () => {
+    let myEmail = document.getElementById("emailData").value;
+    let myPasswordData = document.getElementById("passwordData").value;
+    console.log(myEmail + " " + myPasswordData);
+    console.log(`Email: ${myEmail} Password: ${myPasswordData}`)
+    alert(myEmail + " " + myPasswordData);
 }
 
 
 ///////////////////////////////////////////////////////////////
 //  jQuery
+//  jquery: JS libraries 
+//1.YOL
+// function isHidden() {
+//     //alert("deneme")
+// }
+
+// $(document).ready(function(){});
+// $(function(){});
+
+$(document).ready(function(){
+    // Gizle
+    $("#pictureHidingButton").click(function(){
+        //$("#picture").hide("slow");
+        $("#imageId").hide("slow",function(){
+            alert("resim kapatıldı");
+        });
+    });
+
+    // Göster
+    $("#pictureShowingButton").click(function(){
+        //$("#picture").hide("slow");
+        $("#imageId").show("slow",function(){
+            alert("resim gösterildi");
+        });
+    });
+});
+
+//jquery 
+
+
+///////////////////////////////////////////////////////////////
 //  Template (HTML5-Css3-Js-jQuery-Bootstrap-Responsive Design)
 
 
