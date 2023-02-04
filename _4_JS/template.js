@@ -1216,7 +1216,9 @@ promise1.then(temp => {
 ///////////////////////////////////////////////////////////////
 //  DOM (html-css-js)
 let showingDom=()=>{
+   
     //console.log("data");
+    //HTML TEXT
     //ID
     //window.document.getElementById("parag_id").innerHTML="Değiştirdim";
 
@@ -1227,8 +1229,18 @@ let showingDom=()=>{
     //document.getElementById("parag_id").innerText="<b><mark>Değiştirdim</mark></b>";
 
     //CLASS
-    document.getElementsByClassName("parag_class")[0].innerText="<b><mark>Değiştirdim</mark></b>";
+    //document.getElementsByClassName("parag_class")[0].innerText="<b><mark>Değiştirdim</mark></b>";
 
+    // CSS 
+   let data=document.getElementById("parag_id");
+
+   data.innerHTML="<b> Html datası</b>"; //Html
+  
+   data.style.fontSize="35px";
+   data.style.color="white";
+   data.style.backgroundColor="black";
+   data.style.padding="15px";
+   data.style.marginTop="15px";
 }
 
 
