@@ -1243,8 +1243,16 @@ let showingDom = () => {
 }
 
 let formResult = () => {
-    let myEmail = document.getElementById("emailData").value;
-    let myPasswordData = document.getElementById("passwordData").value;
+    // JS DOM
+    // let myEmail = document.getElementById("emailData").value;
+    // let myPasswordData = document.getElementById("passwordData").value;
+    // console.log(myEmail + " " + myPasswordData);
+    // console.log(`Email: ${myEmail} Password: ${myPasswordData}`)
+    // alert(myEmail + " " + myPasswordData);
+
+    // JQUERY 
+    let myEmail =$.trim($("#emailData").val());
+    let myPasswordData = jQuery.trim($("#passwordData").val()) ;
     console.log(myEmail + " " + myPasswordData);
     console.log(`Email: ${myEmail} Password: ${myPasswordData}`)
     alert(myEmail + " " + myPasswordData);
